@@ -21,7 +21,6 @@ int est_feuille(Un_nabr *noeud){
   }
 }
 
-
 void detruire_abr(Un_nabr *abr){
   // free que les nabr
   // recursion easier ?
