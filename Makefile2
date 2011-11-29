@@ -19,9 +19,9 @@ test_sta.o : test_sta.c
 	gcc ${C_FLAGS} -c test_sta.c
 
 #test_sta : test_sta.o liste.o truc.o abr.o station.o
-test_sta : test_sta.o liste.o truc.o abr.o
+test_sta : test_sta.o liste.o truc.o abr.o ligne.o
 #	gcc ${C_FLAGS} -o test_sta test_sta.o truc.o liste.o abr.o station.o
-	gcc ${C_FLAGS} -o test_sta test_sta.o truc.o liste.o abr.o
+	gcc ${C_FLAGS} -o test_sta test_sta.o truc.o liste.o abr.o ligne.o 
 
 ligne.o : ligne.c
 	gcc ${C_FLAGS} -c ligne.c
@@ -38,8 +38,11 @@ connexion.o : connexion.c
 test_connexion.o : test_connexion.c
 	gcc ${C_FLAGS} -c test_connexion.c
 
-test_connexion : test_connexion.o connexion.o ligne.o abr.o liste.o truc.o station.o
-	gcc ${C_FLAGS} -lm -o test_connexion test_connexion.o connexion.o ligne.o abr.o liste.o truc.o station.o
+#test_connexion : test_connexion.o connexion.o ligne.o abr.o liste.o truc.o station.o
+#	gcc ${C_FLAGS} -lm -o test_connexion test_connexion.o connexion.o ligne.o abr.o liste.o truc.o station.o
+
+test_connexion : test_connexion.o ligne.o abr.o liste.o truc.o
+	gcc ${C_FLAGS} -lm -o test_connexion test_connexion.o ligne.o abr.o liste.o truc.o
 
 dijkstra.o : dijkstra.c
 	gcc ${C_FLAGS} -c dijkstra.c

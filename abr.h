@@ -17,4 +17,8 @@ void detruire_abr(Un_nabr *abr);
 
 Un_truc *chercher_station(Un_nabr *abr, char *nom);
 
+Un_nabr *creer_nabr(Un_truc *truc);
+
+Un_nabr *inserer_abr(Un_nabr *abr, Un_nabr *n);
+
 #endif

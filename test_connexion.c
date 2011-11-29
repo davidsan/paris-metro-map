@@ -1,5 +1,4 @@
-#include<stdio.h>
-
+#include <stdio.h>
 #include "liste.h"
 #include "truc.h"
 #include "abr.h"

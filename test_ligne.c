@@ -19,7 +19,11 @@ int main(int argc, char *argv[])
 	
 	afficher_lignes(liste_lignes);
 
+	/** Test
+	    afficher_lignes(chercher_ligne(liste_lignes, "T1"));
+	 **/
+	
 	detruire_lignes(liste_lignes);
-
+		
 	return 1;
 	}
