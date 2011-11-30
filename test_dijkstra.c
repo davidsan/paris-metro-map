@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 6)
 		{
-		fprintf(stderr, "Usage : test_connexion f_stations f_ligne f_connexion sta_dep sta_arr\n");
+		fprintf(stderr, "Usage : test_dijkstra f_stations f_ligne f_connexion sta_dep sta_arr\n");
 		return 1;
 		}
 	

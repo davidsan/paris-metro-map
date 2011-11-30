@@ -27,13 +27,15 @@ int main(int argc, char *argv[])
 	
 	ecrire_liste(stdout, liste_sta);
 
-	/** test OK
-	    extraire_deb_liste(&liste_sta);
-	    
-	    ecrire_liste(stdout, liste_sta);
+	
+	/** Test
+	 *  doit afficher "Malesherbes"
+	 *  c.-à-d.le nom de la station extraite
+	 	
+	printf("\n%s\n", extraire_deb_liste(&liste_sta)->data.sta.nom);
 
 	**/
-	
+		
 	abr = construire_abr(liste_sta);
 
 	for(l=liste_sta; l; l=l->suiv){
