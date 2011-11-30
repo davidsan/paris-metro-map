@@ -1,7 +1,9 @@
 # Project 215 (aka RATP)
 
-Progress : [4/6]
 
+## Progress : 4 / 6
+
+```
 23/11 correction Stralingrad -> Stalingrad
 23/11 correction Abebesses -> Abbesses
 23/11 correction F-Mitterand -> Francois Mitterand
@@ -14,10 +16,11 @@ stations.
 30/11 Du fait de l'intégration dans GTK, les paramètres linguistiques sont
 pris en compte donc strtof ne veut pas lire les flotants avec des points mais
 des virgules. -> Stations_MRT_v2fr.csv
+```
 
 ## Usage
 
-###Test stations
+### Test stations
 
 ``` bash
 $ make -f Makefile2 test_sta
@@ -25,7 +28,7 @@ $ ./test_sta Stations_MRT.csv
 
 ```
 
-###Test lignes
+### Test lignes
 
 ``` bash
 $ make -f Makefile2 test_ligne
@@ -33,7 +36,7 @@ $ ./test_ligne Lignes_MRT.csv
 
 ```
 
-###Test connexions
+### Test connexions
 
 ``` bash
 $ make -f Makefile2 test_connexion
