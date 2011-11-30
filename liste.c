@@ -211,3 +211,23 @@ Un_elem *lire_connexions(char *nom_fichier, Une_ligne *liste_ligne, Un_nabr *abr
   }
   return deb;
 }
+
+
+Un_truc *extraire_deb_liste(Un_elem **liste){
+  Un_elem *tmp=NULL;
+  Un_truc *extract=NULL;
+  
+  tmp=*liste;
+  *liste=(*liste)->suiv;
+  extract=tmp->truc;
+  free(tmp);
+  
+  
+  return extract;  
+}
+
+
+Un_truc *extraire_liste(Un_elem **liste, Un_truc *truc){
+
+  return NULL;
+}

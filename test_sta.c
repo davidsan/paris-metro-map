@@ -26,6 +26,13 @@ int main(int argc, char *argv[])
 	printf("Stations dans [%f,%f] et [%f,%f]\n", no.lon, no.lat, se.lon, se.lat);
 	
 	ecrire_liste(stdout, liste_sta);
+
+	/** test OK
+	    extraire_deb_liste(&liste_sta);
+	    
+	    ecrire_liste(stdout, liste_sta);
+
+	**/
 	
 	abr = construire_abr(liste_sta);
 
