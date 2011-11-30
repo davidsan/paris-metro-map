@@ -1,5 +1,6 @@
 #C_FLAGS = -Wall -g -std=c99
 C_FLAGS = -Wall -g
+LD_FLAGS = -lm
 
 all : test_sta test_ligne test_connexion test_dijkstra
 
@@ -21,7 +22,7 @@ test_sta.o : test_sta.c
 #test_sta : test_sta.o liste.o truc.o abr.o station.o
 test_sta : test_sta.o liste.o truc.o abr.o ligne.o
 #	gcc ${C_FLAGS} -o test_sta test_sta.o truc.o liste.o abr.o station.o
-	gcc ${C_FLAGS} -o test_sta test_sta.o truc.o liste.o abr.o ligne.o 
+	gcc ${C_FLAGS} -o test_sta test_sta.o truc.o liste.o abr.o ligne.o $(LD_FLAGS)
 
 ligne.o : ligne.c
 	gcc ${C_FLAGS} -c ligne.c

@@ -16,8 +16,6 @@ Un_nabr *creer_nabr(Un_truc *truc){
   return tmp;
 }
 
-
-
 Un_nabr *inserer_abr(Un_nabr *abr, Un_nabr *n){
   if (!abr)
     return n;
