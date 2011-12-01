@@ -1,0 +1,17 @@
+abr.o: abr.c abr.h liste.h truc.h coord.h station.h connexion.h ligne.h \
+ abr_type.h
+ligne.o: ligne.c ligne.h
+liste.o: liste.c liste.h truc.h coord.h station.h connexion.h ligne.h \
+ abr_type.h abr.h
+metro_callback_v0.o: metro_callback_v0.c liste.h truc.h coord.h station.h \
+ connexion.h ligne.h abr_type.h
+metro_v0.o: metro_v0.c metro_callback_v0.h liste.h truc.h coord.h \
+ station.h connexion.h ligne.h abr_type.h
+test_connexion.o: test_connexion.c liste.h truc.h coord.h station.h \
+ connexion.h ligne.h abr_type.h abr.h
+test_dijkstra.o: test_dijkstra.c liste.h truc.h coord.h station.h \
+ connexion.h ligne.h abr_type.h abr.h dijkstra.h
+test_ligne.o: test_ligne.c ligne.h
+test_sta.o: test_sta.c liste.h truc.h coord.h station.h connexion.h \
+ ligne.h abr_type.h abr.h
+truc.o: truc.c truc.h coord.h station.h connexion.h

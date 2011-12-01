@@ -117,7 +117,7 @@ int main(int argc, char **argv)
 	//initialisation reseau
 	liste_sta_aff = lire_stations("Stations_MRT_v2fr.csv");
 	//ecrire_liste(stdout, liste_sta_aff);
-	limites_zone(liste_sta_aff, &lim_no, &lim_se);
+	//	limites_zone(liste_sta_aff, &lim_no, &lim_se);
 
 	gtk_widget_show_all(pWindow);
 
