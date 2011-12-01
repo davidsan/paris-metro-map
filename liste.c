@@ -225,6 +225,29 @@ Un_truc *extraire_deb_liste(Un_elem **liste){
 
 
 Un_truc *extraire_liste(Un_elem **liste, Un_truc *truc){
+  Un_elem *tmp=NULL;
+  Un_elem *prec=NULL;
+  Un_truc *extract=NULL;
   
-  return NULL;
+  // truc trouvé en position 1
+  if((*liste)->truc==truc){
+    return extraire_deb_liste(liste);
+  }
+
+  // truc ne sera pas en position 1
+  tmp=*liste;
+  
+  while((*liste)->suiv){
+    prec=*liste;
+    *liste=(*liste)->suiv;
+    if((*liste)->truc==truc){
+      extract=extraire_deb_liste(liste);
+      // raccord de la liste
+      prec->suiv=*liste;
+      break;
+    }
+  }
+  
+  *liste=tmp;
+  return extract;  
 }
