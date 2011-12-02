@@ -1,7 +1,7 @@
 #C_FLAGS = -Wall -g -std=c99
 C_FLAGS = -Wall -g
 
-all : test_sta test_ligne test_connexion test_dijkstra
+all : test_sta test_ligne test_connexion test_dijkstra test_aqr metro_v0 metro_v1 metro_v2
 
 truc.o : truc.c
 	gcc ${C_FLAGS} -c truc.c
@@ -48,5 +48,41 @@ test_dijkstra.o : test_dijkstra.c
 test_dijkstra : test_dijkstra.o connexion.o ligne.o abr.o liste.o truc.o station.o dijkstra.o
 	gcc ${C_FLAGS} -lm -o test_dijkstra test_dijkstra.o connexion.o ligne.o abr.o liste.o truc.o station.o dijkstra.o
 
+aqrtopo.o : aqrtopo.c
+	gcc ${C_FLAGS} -c aqrtopo.c
+
+test_aqr.o : test_aqr.c
+	gcc ${C_FLAGS} -c test_aqr.c
+
+test_aqr : test_aqr.o connexion.o ligne.o abr.o liste.o truc.o station.o aqrtopo.o
+	gcc ${C_FLAGS} -lm -o test_aqr test_aqr.o connexion.o ligne.o abr.o liste.o truc.o station.o aqrtopo.o
+
+metro_callback_v0.o : metro_callback_v0.c
+	gcc ${C_FLAGS} `pkg-config --cflags gtk+-2.0` -c metro_callback_v0.c
+
+metro_v0.o : metro_v0.c
+	gcc ${C_FLAGS} `pkg-config --cflags gtk+-2.0` -c metro_v0.c
+
+metro_v0 : metro_v0.o metro_callback_v0.o liste.o truc.o station.o
+	gcc ${C_FLAGS} `pkg-config --libs gtk+-2.0` -o metro_v0 metro_v0.o metro_callback_v0.o liste.o truc.o station.o
+
+metro_callback_v1.o : metro_callback_v1.c
+	gcc ${C_FLAGS} `pkg-config --cflags gtk+-2.0` -c metro_callback_v1.c
+
+metro_v1.o : metro_v1.c
+	gcc ${C_FLAGS} `pkg-config --cflags gtk+-2.0` -c metro_v1.c
+
+metro_v1 : metro_v1.o metro_callback_v1.o liste.o truc.o station.o ligne.o connexion.o abr.o
+	gcc ${C_FLAGS} `pkg-config --libs gtk+-2.0` -o metro_v1 metro_v1.o metro_callback_v1.o liste.o truc.o station.o connexion.o ligne.o abr.o
+
+metro_callback_v2.o : metro_callback_v2.c
+	gcc ${C_FLAGS} `pkg-config --cflags gtk+-2.0` -c metro_callback_v2.c
+
+metro_v2.o : metro_v2.c
+	gcc ${C_FLAGS} `pkg-config --cflags gtk+-2.0` -c metro_v2.c
+
+metro_v2 : metro_v2.o metro_callback_v2.o liste.o truc.o station.o ligne.o connexion.o abr.o aqrtopo.o
+	gcc ${C_FLAGS} `pkg-config --libs gtk+-2.0` -o metro_v2 metro_v2.o metro_callback_v2.o liste.o truc.o station.o connexion.o ligne.o abr.o aqrtopo.o
+
 clean :
-	rm -f *.o test_sta test_ligne test_connexion test_dijksra
+	rm -f *.o test_sta test_ligne test_connexion test_dijksra test_aqr metro_v0 metro_v1 metro_v2

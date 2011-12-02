@@ -196,8 +196,8 @@ P;Magenta;Gare du Nord;0.0
 P;Gare de l'Est;Magenta;0.0
 P;Magenta;Gare de l'Est;0.0
 # P St Michel
-P;Cluny,La Sorbonne;St Michel Notre Dame;0.0
-P;St Michel Notre Dame;Cluny,La Sorbonne;0.0
+P;Cluny.La Sorbonne;St Michel Notre Dame;0.0
+P;St Michel Notre Dame;Cluny.La Sorbonne;0.0
 P;Saint Michel;St Michel Notre Dame;0.0
 P;St Michel Notre Dame;Saint Michel;0.0
 # B3
@@ -432,10 +432,10 @@ D1;Gare de Lyon;Maisons Alfort Alfortville;0.0
 D1;Maisons Alfort Alfortville;Gare de Lyon;0.0
 D1;Maisons Alfort Alfortville;Le Vert de Maisons;0.0
 D1;Le Vert de Maisons;Maisons Alfort Alfortville;0.0
-D1;Le Vert de Maisons;Villeneuve Prairie;0.0
-D1;Villeneuve Prairie;Le Vert de Maisons;0.0
-D1;Villeneuve Prairie;Villeneuve Triage;0.0
-D1;Villeneuve Triage;Villeneuve Prairie;0.0
+D1;Le Vert de Maisons;Villeneuve Pairie;0.0
+D1;Villeneuve Pairie;Le Vert de Maisons;0.0
+D1;Villeneuve Pairie;Villeneuve Triage;0.0
+D1;Villeneuve Triage;Villeneuve Pairie;0.0
 D1;Villeneuve Triage;Villeneuve St Georges;0.0
 D1;Villeneuve St Georges;Villeneuve Triage;0.0
 # D2
@@ -460,8 +460,8 @@ D2;Montgeron Crosne;Yerres;0.0
 D2;Montgeron Crosne;Villeneuve St Georges;0.0
 D2;Villeneuve St Georges;Montgeron Crosne;0.0
 # D4
-D4;Malesherbes;Boigneville;0.0
-D4;Boigneville;Malesherbes;0.0
+D4;Malesherbes (Loiret);Boigneville;0.0
+D4;Boigneville;Malesherbes (Loiret);0.0
 D4;Boigneville;Buno Gironville;0.0
 D4;Buno Gironville;Boigneville;0.0
 D4;Buno Gironville;Maisse;0.0
@@ -634,10 +634,10 @@ M10;Sevres Babylone;Mabillon;0.0
 M10;Mabillon;Sevres Babylone;0.0
 M10;Mabillon;Odeon;0.0
 M10;Odeon;Mabillon;0.0
-M10;Odeon;Cluny,La Sorbonne;0.0
-M10;Cluny,La Sorbonne;Odeon;0.0
-M10;Cluny,La Sorbonne;Maubert Mutualite;0.0
-M10;Maubert Mutualite;Cluny,La Sorbonne;0.0
+M10;Odeon;Cluny.La Sorbonne;0.0
+M10;Cluny.La Sorbonne;Odeon;0.0
+M10;Cluny.La Sorbonne;Maubert Mutualite;0.0
+M10;Maubert Mutualite;Cluny.La Sorbonne;0.0
 M10;Maubert Mutualite;Cardinal Lemoine;0.0
 M10;Cardinal Lemoine;Maubert Mutualite;0.0
 M10;Cardinal Lemoine;Jussieu;0.0
@@ -1346,14 +1346,16 @@ T1;Petit Noisy;Pont de Bondy;0.0
 T1;Petit Noisy;Noisy le sec;0.0
 T1;Noisy le sec;Petit Noisy;0.0
 # T2
-T2;Les Coteaux;Defense;0.0
-T2;Defense;Les Coteaux;0.0
 T2;Defense;Puteaux;0.0
 T2;Puteaux;Defense;0.0
 T2;Puteaux;Belvedere;0.0
 T2;Belvedere;Puteaux;0.0
 T2;Belvedere;Suresnes Lonchamp;0.0
 T2;Suresnes Lonchamp;Belvedere;0.0
+T2;Suresnes Lonchamp;Les Coteaux;0.0
+T2;Les Coteaux;Suresnes Lonchamp;0.0
+T2;Les Coteaux;Les Milons;0.0
+T2;Les Milons;Les Coteaux;0.0
 T2;Les Milons;Parc de St Cloud;0.0
 T2;Parc de St Cloud;Les Milons;0.0
 T2;Parc de St Cloud;Musee de Sevres;0.0

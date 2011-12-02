@@ -10,3 +10,9 @@ stations.
 30/11 Du fait de l'intégration dans GTK, les paramètres linguistiques sont
 pris en compte donc strtof ne veut pas lire les flotants avec des points mais
 des virgules. -> Stations_MRT_v2fr.csv
+02/12 Mise à Jours des fichiers csv (v2 et v2fr).
+02/12 Affichage des connexions (metro_v1)
+02/12 Zoom et deplacement (metro_v2)
+02/12 Remarque : pb identifié dans aqr lors de l'insertion de 2 truc aux mêmes
+coordonnées (-> récursion infinie). Solution : détecter la proximité de 2 trucs
+et dans ce cas décaler d'un epsilon l'un des 2.
