@@ -72,20 +72,21 @@ Un_elem *lire_stations( char *nom_fichier){
   Un_elem *liste=NULL;
   Un_truc *truc=NULL;
   
-  truc=(Un_truc*)malloc(sizeof(Un_truc));
-  if (!truc){
-    fprintf(stderr, "Erreur : allocation mémoire\n");
-    return NULL;
-  }
-    
+ 
   f=fopen(nom_fichier, "r");
   if (!f){
     fprintf(stderr, "Erreur : lecture fichier\n");
-    free(truc);
     return NULL;
   }
-  truc->type=STA;
   while(fgets(buff, 1024, f)!=NULL){
+    truc=(Un_truc*)malloc(sizeof(Un_truc));
+    if(!truc){
+      fprintf(stderr, "Erreur : allocation mémoire\n");
+      fclose(f);
+      return NULL;
+    }
+    
+    truc->type=STA;
    
     
     sscanf(buff, "%f;%f;%[^\t\n]", &(truc->coord.lon), &(truc->coord.lat), tmp);
@@ -101,9 +102,8 @@ Un_elem *lire_stations( char *nom_fichier){
      **/
     
     liste=inserer_liste_trie(liste, truc);
-    truc=(Un_truc*)malloc(sizeof(Un_truc));
-
   }
+  fclose(f);
   return liste;
 }
 
@@ -212,6 +212,7 @@ Un_elem *lire_connexions(char *nom_fichier, Une_ligne *liste_ligne, Un_nabr *abr
     }
     deb=inserer_deb_liste(deb, truc);
   }
+  fclose(f);
   return deb;
 }
 
