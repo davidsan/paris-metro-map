@@ -71,29 +71,37 @@ Un_elem *lire_stations( char *nom_fichier){
   char tmp[1024];
   Un_elem *liste=NULL;
   Un_truc *truc=NULL;
-  
+  Une_coord *coord_lu;
+  Une_station *station_lu;
  
   f=fopen(nom_fichier, "r");
   if (!f){
     fprintf(stderr, "Erreur : lecture fichier\n");
     return NULL;
   }
+  
   while(fgets(buff, 1024, f)!=NULL){
-    truc=(Un_truc*)malloc(sizeof(Un_truc));
-    if(!truc){
+    coord_lu=(Une_coord*)malloc(sizeof(Une_coord));
+    if(!coord_lu){
       fprintf(stderr, "Erreur : allocation mémoire\n");
+      free(truc);
+      free(liste);
       fclose(f);
-      return NULL;
     }
-    
-    truc->type=STA;
-   
-    
-    sscanf(buff, "%f;%f;%[^\t\n]", &(truc->coord.lon), &(truc->coord.lat), tmp);
-    truc->data.sta.nom=strdup(tmp);
-
-    // init user_val to latitude
-    truc->user_val=truc->coord.lat;
+    station_lu=(Une_station*)malloc(sizeof(Une_station));
+    if(!coord_lu){
+      fprintf(stderr, "Erreur : allocation mémoire\n");
+      free(truc);
+      free(liste);
+      free(coord_lu);
+      fclose(f);
+    }
+    sscanf(buff, "%f;%f;%[^\t\n]", &(coord_lu->lon), &(coord_lu->lat), tmp);
+    station_lu->nom=strdup(tmp);
+    station_lu->tab_con=NULL;
+    station_lu->nb_con=0;
+    station_lu->con_pcc=NULL;
+    truc=creer_truc(*coord_lu, STA, (Tdata)*station_lu, coord_lu->lat);
 
     /** TEST
      * 
@@ -210,6 +218,10 @@ Un_elem *lire_connexions(char *nom_fichier, Une_ligne *liste_ligne, Un_nabr *abr
       //*** affectation
       truc->user_val=d*60/(truc->data.con.ligne->vitesse);
     }
+
+    // mise à jour du tableau des connexions de la station sta_dep
+    
+    
     deb=inserer_deb_liste(deb, truc);
   }
   fclose(f);
