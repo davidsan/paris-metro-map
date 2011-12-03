@@ -29,12 +29,12 @@ int main(int argc, char *argv[])
 
 	
 	/** Test
-	 *  doit afficher "Boigneville"
+	 *  doit afficher "Malesherbes"
 	 *  c.-à-d.le nom de la station extraite
-	 */	
+	 	
 	printf("\n%s\n", extraire_deb_liste(&liste_sta)->data.sta.nom);
 
-	
+	**/
 		
 	abr = construire_abr(liste_sta);
 
