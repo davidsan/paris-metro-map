@@ -14,13 +14,13 @@ Un_elem *inserer_liste_trie(Un_elem *liste, Un_truc *truc){
   n->truc=truc;
   n->suiv=NULL;
   if(!liste) return n;
-  if(liste->truc->coord.lat > truc->coord.lat){
+  if(liste->truc->user_val > truc->user_val){
     n->suiv=liste;
     return n;
   }
   Un_elem *p=liste;
   while(liste->suiv){
-    if(liste->suiv->truc->coord.lat > truc->coord.lat){
+    if(liste->suiv->truc->user_val > truc->user_val){
       n->suiv=liste->suiv;
       liste->suiv=n;
       break;
@@ -90,6 +90,9 @@ Un_elem *lire_stations( char *nom_fichier){
     
     sscanf(buff, "%f;%f;%[^\t\n]", &(truc->coord.lon), &(truc->coord.lat), tmp);
     truc->data.sta.nom=strdup(tmp);
+
+    // init user_val to latitude
+    truc->user_val=truc->coord.lat;
 
     /** TEST
      * 
