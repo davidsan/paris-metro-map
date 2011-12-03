@@ -71,71 +71,37 @@ Un_elem *lire_stations( char *nom_fichier){
   char tmp[1024];
   Un_elem *liste=NULL;
   Un_truc *truc=NULL;
-<<<<<<< HEAD
-  Une_coord *coord_lu;
-  Une_station *station_lu;
+  Une_coord coord_lu;
+  Une_station station_lu;
  
-=======
-  
-  truc=(Un_truc*)malloc(sizeof(Un_truc));
-  if (!truc){
-    fprintf(stderr, "Erreur : allocation mémoire\n");
-    return NULL;
-  }
-    
->>>>>>> parent of 24c1270... memory optimization (malloc / fclose)
   f=fopen(nom_fichier, "r");
   if (!f){
     fprintf(stderr, "Erreur : lecture fichier\n");
-    free(truc);
     return NULL;
   }
-<<<<<<< HEAD
   
   while(fgets(buff, 1024, f)!=NULL){
-    coord_lu=(Une_coord*)malloc(sizeof(Une_coord));
-    if(!coord_lu){
-      fprintf(stderr, "Erreur : allocation mémoire\n");
-      free(truc);
-      free(liste);
-      fclose(f);
+    if(sscanf(buff, "%f;%f;%[^\t\n]", &(coord_lu.lon), &(coord_lu.lat), tmp)!=3){
+      fprintf(stderr, "Erreur : lecture ligne du fichier\n");
+      return NULL;
     }
-    station_lu=(Une_station*)malloc(sizeof(Une_station));
-    if(!coord_lu){
-      fprintf(stderr, "Erreur : allocation mémoire\n");
-      free(truc);
-      free(liste);
-      free(coord_lu);
-      fclose(f);
+    station_lu.nom=strdup(tmp);
+    station_lu.tab_con=NULL;
+    station_lu.nb_con=0;
+    station_lu.con_pcc=NULL;
+    truc=creer_truc(coord_lu, STA, (Tdata)station_lu, coord_lu.lat);
+    if(truc==NULL){
+      fprintf(stderr, "Erreur création truc\n");
+      return NULL;
     }
-    sscanf(buff, "%f;%f;%[^\t\n]", &(coord_lu->lon), &(coord_lu->lat), tmp);
-    station_lu->nom=strdup(tmp);
-    station_lu->tab_con=NULL;
-    station_lu->nb_con=0;
-    station_lu->con_pcc=NULL;
-    truc=creer_truc(*coord_lu, STA, (Tdata)*station_lu, coord_lu->lat);
-=======
-  truc->type=STA;
-  while(fgets(buff, 1024, f)!=NULL){
-   
     
-    sscanf(buff, "%f;%f;%[^\t\n]", &(truc->coord.lon), &(truc->coord.lat), tmp);
-    truc->data.sta.nom=strdup(tmp);
-
-    // init user_val to latitude
-    truc->user_val=truc->coord.lat;
->>>>>>> parent of 24c1270... memory optimization (malloc / fclose)
-
     /** TEST
-     * 
      * fprintf(stdout,"%s \n", tmp);
-     *
      **/
     
     liste=inserer_liste_trie(liste, truc);
-    truc=(Un_truc*)malloc(sizeof(Un_truc));
-
   }
+  fclose(f);
   return liste;
 }
 
@@ -201,7 +167,7 @@ Un_elem *lire_connexions(char *nom_fichier, Une_ligne *liste_ligne, Un_nabr *abr
     if(truc->data.con.sta_dep==NULL){
       fprintf(stderr, "Erreur : station non trouvée\n");
       free(truc);
-      free(str);
+      return NULL;
     }
 
     // Station arrivée
@@ -215,7 +181,7 @@ Un_elem *lire_connexions(char *nom_fichier, Une_ligne *liste_ligne, Un_nabr *abr
     if(truc->data.con.sta_arr==NULL){
       fprintf(stderr, "Erreur : station non trouvée\n");
       free(truc);
-      free(str);
+      return NULL;
     }
 
     // Lecture du user_val et calcul de celui-ci
@@ -248,6 +214,7 @@ Un_elem *lire_connexions(char *nom_fichier, Une_ligne *liste_ligne, Un_nabr *abr
     
     deb=inserer_deb_liste(deb, truc);
   }
+  fclose(f);
   return deb;
 }
 

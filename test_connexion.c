@@ -43,5 +43,5 @@ int main(int argc, char *argv[])
 
 	detruire_lignes(liste_ligne);
 
-	return 1;
+	return 0;
 	}

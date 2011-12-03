@@ -196,8 +196,8 @@ P;Magenta;Gare du Nord;0.0
 P;Gare de l'Est;Magenta;0.0
 P;Magenta;Gare de l'Est;0.0
 # P St Michel
-P;Cluny.La Sorbonne;St Michel Notre Dame;0.0
-P;St Michel Notre Dame;Cluny.La Sorbonne;0.0
+P;Cluny,La Sorbonne;St Michel Notre Dame;0.0
+P;St Michel Notre Dame;Cluny,La Sorbonne;0.0
 P;Saint Michel;St Michel Notre Dame;0.0
 P;St Michel Notre Dame;Saint Michel;0.0
 # B3
@@ -634,10 +634,10 @@ M10;Sevres Babylone;Mabillon;0.0
 M10;Mabillon;Sevres Babylone;0.0
 M10;Mabillon;Odeon;0.0
 M10;Odeon;Mabillon;0.0
-M10;Odeon;Cluny.La Sorbonne;0.0
-M10;Cluny.La Sorbonne;Odeon;0.0
-M10;Cluny.La Sorbonne;Maubert Mutualite;0.0
-M10;Maubert Mutualite;Cluny.La Sorbonne;0.0
+M10;Odeon;Cluny,La Sorbonne;0.0
+M10;Cluny,La Sorbonne;Odeon;0.0
+M10;Cluny,La Sorbonne;Maubert Mutualite;0.0
+M10;Maubert Mutualite;Cluny,La Sorbonne;0.0
 M10;Maubert Mutualite;Cardinal Lemoine;0.0
 M10;Cardinal Lemoine;Maubert Mutualite;0.0
 M10;Cardinal Lemoine;Jussieu;0.0
