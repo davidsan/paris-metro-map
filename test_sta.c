@@ -29,13 +29,29 @@ int main(int argc, char *argv[])
   ecrire_liste(stdout, liste_sta);
 	
   /** Test
-   *  doit afficher "Malesherbes"
-   *  c.-à-d.le nom de la station extraite
-	 	
+   *  doit afficher "Malesherbes (Loiret)"
+   *  c.-à-d.le nom de la station extraite au début de liste_sta
    printf("\n%s\n", extraire_deb_liste(&liste_sta)->data.sta.nom);
-
   **/
-		
+
+  /** Test
+   *  extrait la station en début de liste
+   *  ne pas oublier de la détruire (memory leak)
+   detruire_truc(extraire_deb_liste(&liste_sta));
+  **/
+
+  /** Test
+   *  extrait la station passé en argument
+   *  ne pas oublier de la détruire (memory leak)
+   detruire_truc(extraire_liste(&liste_sta,liste_sta->suiv->suiv->truc)->data.sta.nom));
+   **/
+
+  /** Test
+   *  doit afficher "Buno Gironville"
+   *  c.-à-d. le nom de la station n°3 extraite de liste_sta
+   printf("\n%s\n", extraire_liste(&liste_sta,liste_sta->suiv->suiv->truc)->data.sta.nom);
+  **/
+  
   abr = construire_abr(liste_sta);
 	
   for(l=liste_sta; l; l=l->suiv){
