@@ -33,7 +33,7 @@ Un_nabr *construire_abr(Un_elem *liste_sta){
   Un_nabr *noeud=NULL;
   Un_elem *mem=liste_sta;
   while(liste_sta){
-    noeud = creer_nabr(liste_sta->truc);
+    noeud = creer_nabr(liste_sta->truc);    
     abr = inserer_abr(abr, noeud);
     liste_sta = liste_sta->suiv;
   }
@@ -46,7 +46,6 @@ void detruire_abr(Un_nabr *abr){
   if(abr){
     detruire_abr(abr->g);
     detruire_abr(abr->d);
-    detruire_truc(abr->truc);
     free(abr);
   }
 }

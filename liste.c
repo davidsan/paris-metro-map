@@ -3,22 +3,27 @@
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
+#define MAX_LIGNE 1024
 
-#define MAX_LIGNE 256
 Un_elem *inserer_liste_trie(Un_elem *liste, Un_truc *truc){
-  Un_elem *n=(Un_elem*)malloc(sizeof(Un_elem));
+  Un_elem *n=NULL;
+  Un_elem *p=NULL;
+  n=(Un_elem*)malloc(sizeof(Un_elem));
   if (!n){
     fprintf(stderr, "Erreur : allocation mémoire\n");
     return NULL;
   }
+  
   n->truc=truc;
   n->suiv=NULL;
-  if(!liste) return n;
+  if(!liste){
+    return n;
+  }
   if(liste->truc->user_val > truc->user_val){
     n->suiv=liste;
     return n;
   }
-  Un_elem *p=liste;
+  p=liste;
   while(liste->suiv){
     if(liste->suiv->truc->user_val > truc->user_val){
       n->suiv=liste->suiv;
@@ -47,9 +52,9 @@ void detruire_liste_et_truc(Un_elem *liste){
   while(liste){
     tmp=liste->suiv;
     detruire_truc(liste->truc);
-    free(liste);
     liste=tmp;
   }
+  detruire_liste(liste);
 }
 
 void ecrire_liste(FILE *flux, Un_elem *liste){
@@ -67,8 +72,8 @@ void ecrire_liste(FILE *flux, Un_elem *liste){
 
 Un_elem *lire_stations( char *nom_fichier){
   FILE *f=NULL;
-  char buff[1024];
-  char tmp[1024];
+  char buff[MAX_LIGNE];
+  char tmp[MAX_LIGNE];
   Un_elem *liste=NULL;
   Un_truc *truc=NULL;
   Une_coord coord_lu;
@@ -80,9 +85,10 @@ Un_elem *lire_stations( char *nom_fichier){
     return NULL;
   }
   
-  while(fgets(buff, 1024, f)!=NULL){
+  while(fgets(buff, MAX_LIGNE, f)!=NULL){
     if(sscanf(buff, "%f;%f;%[^\t\n]", &(coord_lu.lon), &(coord_lu.lat), tmp)!=3){
       fprintf(stderr, "Erreur : lecture ligne du fichier\n");
+      fclose(f);
       return NULL;
     }
     station_lu.nom=strdup(tmp);
@@ -90,15 +96,13 @@ Un_elem *lire_stations( char *nom_fichier){
     station_lu.nb_con=0;
     station_lu.con_pcc=NULL;
     truc=creer_truc(coord_lu, STA, (Tdata)station_lu, coord_lu.lat);
+    
     if(truc==NULL){
       fprintf(stderr, "Erreur création truc\n");
+      fclose(f);
       return NULL;
     }
-    
-    /** TEST
-     * fprintf(stdout,"%s \n", tmp);
-     **/
-    
+        
     liste=inserer_liste_trie(liste, truc);
     
   }
@@ -150,7 +154,6 @@ Un_elem *lire_connexions(char *nom_fichier, Une_ligne *liste_ligne, Un_nabr *abr
     conn_lu.ligne=chercher_ligne(liste_ligne, str);
     if(!conn_lu.ligne){
       fprintf(stderr, "Erreur : code ligne non trouvée\n");
-      free(str);
       return NULL;
     }
 
@@ -163,7 +166,6 @@ Un_elem *lire_connexions(char *nom_fichier, Une_ligne *liste_ligne, Un_nabr *abr
     conn_lu.sta_dep=chercher_station(abr_sta, str);
     if(conn_lu.sta_dep==NULL){
       fprintf(stderr, "Erreur : station non trouvée\n");
-      free(str);
       return NULL;
     }
 
@@ -176,7 +178,6 @@ Un_elem *lire_connexions(char *nom_fichier, Une_ligne *liste_ligne, Un_nabr *abr
     conn_lu.sta_arr=chercher_station(abr_sta, str);
     if(conn_lu.sta_arr==NULL){
       fprintf(stderr, "Erreur : station non trouvée\n");
-      free(str);
       return NULL;
     }
 
@@ -184,7 +185,6 @@ Un_elem *lire_connexions(char *nom_fichier, Une_ligne *liste_ligne, Un_nabr *abr
     str=strtok(NULL, "\n");
     if(!str){
       fprintf(stderr, "Erreur : lecture user_val\n");
-      free(str);
       return NULL;
     }
 
@@ -206,6 +206,8 @@ Un_elem *lire_connexions(char *nom_fichier, Une_ligne *liste_ligne, Un_nabr *abr
     }
     truc=creer_truc(coord_lu, CON, (Tdata)conn_lu, user_val_lu);
     // mise à jour du tableau des connexions de la station sta_dep
+
+    // ce bloc -> OK mémoire
     if(conn_lu.sta_dep->data.sta.nb_con < 1){
       conn_lu.sta_dep->data.sta.nb_con=1;
       conn_lu.sta_dep->data.sta.tab_con=(Un_truc**)(malloc(sizeof(Un_truc*)*conn_lu.sta_dep->data.sta.nb_con));
@@ -215,7 +217,7 @@ Un_elem *lire_connexions(char *nom_fichier, Une_ligne *liste_ligne, Un_nabr *abr
       conn_lu.sta_dep->data.sta.tab_con=(Un_truc**)(realloc(conn_lu.sta_dep->data.sta.tab_con,(sizeof(Un_truc*)*conn_lu.sta_dep->data.sta.nb_con)));
     }
     conn_lu.sta_dep->data.sta.tab_con[(conn_lu.sta_dep->data.sta.nb_con)-1]=truc;
-      
+    
     
     deb=inserer_deb_liste(deb, truc);
   }
@@ -294,9 +296,9 @@ void limites_zone(Un_elem *liste, Une_coord *limite_no, Une_coord *limite_se){
       limite_se->lat=lat;
     }
     if(lon > limite_se->lon){
-    limite_se->lon=lon;
+      limite_se->lon=lon;
     }
     liste=liste->suiv;
-    } 
+  } 
 }
 

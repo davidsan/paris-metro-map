@@ -6,7 +6,7 @@
 int main(int argc, char *argv[])
 	{
 	Un_elem *liste_sta = NULL, *l;
-       	Un_nabr *abr;
+       	Un_nabr *abr=NULL;
 	Une_coord no, se;
 
 	if (argc != 2)
