@@ -21,17 +21,13 @@ int main(int argc, char *argv[])
 		return 1;
 		}
 
-	//** A FAIRE :
-	 	ecrire_liste(stdout, liste_sta);
-
+	
 	limites_zone(liste_sta, &no, &se);
 	 
 	printf("Stations dans [%f,%f] et [%f,%f]\n", no.lon, no.lat, se.lon, se.lat);
-	/**/
 	
 	ecrire_liste(stdout, liste_sta);
-	printf("Stations dans [%f,%f] et [%f,%f]\n", no.lon, no.lat, se.lon, se.lat);
-
+	
 	/** Test
 	 *  doit afficher "Malesherbes"
 	 *  c.-à-d.le nom de la station extraite
@@ -48,15 +44,9 @@ int main(int argc, char *argv[])
 	  }
 	}
 	
-	ecrire_liste(stdout, liste_sta);
-	
 	detruire_abr(abr);
 	
 	detruire_liste_et_truc(liste_sta);
-
-	/** Test
-	    fprintf(stdout, "finish\n");
-	 **/
 	
 	return 1;
 	}
