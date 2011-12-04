@@ -140,17 +140,6 @@ Un_elem *lire_connexions(char *nom_fichier, Une_ligne *liste_ligne, Un_nabr *abr
     if(strncmp(buff, "#", 1)==0){
       continue;
     }
-
-    /**
-       truc=(Un_truc*)malloc(sizeof(Un_truc));
-       if(!truc){
-       fprintf(stderr, "Erreur : allocation mémoire\n");
-       return NULL;
-       }
-
-       truc->type=CON;
-    **/
-
    
     // Code de la ligne
     str=strtok(buff, ";");
@@ -162,6 +151,7 @@ Un_elem *lire_connexions(char *nom_fichier, Une_ligne *liste_ligne, Un_nabr *abr
     if(!conn_lu.ligne){
       fprintf(stderr, "Erreur : code ligne non trouvée\n");
       free(str);
+      return NULL;
     }
 
     // Station départ
@@ -173,6 +163,7 @@ Un_elem *lire_connexions(char *nom_fichier, Une_ligne *liste_ligne, Un_nabr *abr
     conn_lu.sta_dep=chercher_station(abr_sta, str);
     if(conn_lu.sta_dep==NULL){
       fprintf(stderr, "Erreur : station non trouvée\n");
+      free(str);
       return NULL;
     }
 
@@ -185,6 +176,7 @@ Un_elem *lire_connexions(char *nom_fichier, Une_ligne *liste_ligne, Un_nabr *abr
     conn_lu.sta_arr=chercher_station(abr_sta, str);
     if(conn_lu.sta_arr==NULL){
       fprintf(stderr, "Erreur : station non trouvée\n");
+      free(str);
       return NULL;
     }
 
@@ -192,6 +184,7 @@ Un_elem *lire_connexions(char *nom_fichier, Une_ligne *liste_ligne, Un_nabr *abr
     str=strtok(NULL, "\n");
     if(!str){
       fprintf(stderr, "Erreur : lecture user_val\n");
+      free(str);
       return NULL;
     }
 
@@ -211,9 +204,19 @@ Un_elem *lire_connexions(char *nom_fichier, Une_ligne *liste_ligne, Un_nabr *abr
       //*** affectation
       user_val_lu=d*60/(conn_lu.ligne->vitesse);
     }
-    // mise à jour du tableau des connexions de la station sta_dep
     truc=creer_truc(coord_lu, CON, (Tdata)conn_lu, user_val_lu);
+    // mise à jour du tableau des connexions de la station sta_dep
+    if(conn_lu.sta_dep->data.sta.nb_con < 1){
+      conn_lu.sta_dep->data.sta.nb_con=1;
+      conn_lu.sta_dep->data.sta.tab_con=(Un_truc**)(malloc(sizeof(Un_truc*)*conn_lu.sta_dep->data.sta.nb_con));
+    }
+    else{
+      conn_lu.sta_dep->data.sta.nb_con++;
+      conn_lu.sta_dep->data.sta.tab_con=(Un_truc**)(realloc(conn_lu.sta_dep->data.sta.tab_con,(sizeof(Un_truc*)*conn_lu.sta_dep->data.sta.nb_con)));
+    }
+    conn_lu.sta_dep->data.sta.tab_con[(conn_lu.sta_dep->data.sta.nb_con)-1]=truc;
       
+    
     deb=inserer_deb_liste(deb, truc);
   }
   fclose(f);
@@ -259,3 +262,41 @@ Un_truc *extraire_liste(Un_elem **liste, Un_truc *truc){
   *liste=tmp;
   return extract;  
 }
+
+
+void limites_zone(Un_elem *liste, Une_coord *limite_no, Une_coord *limite_se){
+  float lat;
+  float lon;
+  if(!liste || liste->truc->type !=STA){
+    fprintf(stderr, "Erreur : liste vide\n");
+    return;
+  }
+  limite_no->lon=liste->truc->coord.lon;
+  limite_no->lat=liste->truc->coord.lat;
+  limite_se->lon=liste->truc->coord.lon;
+  limite_se->lat=liste->truc->coord.lat;
+
+  liste=liste->suiv;
+
+  while(liste){
+    lat=liste->truc->coord.lat;
+    lon=liste->truc->coord.lon;
+
+    // Nord Ouest : lat = 90, lon = 0
+    // Sud Est : lat = 0, lon = 180
+    if(lat > limite_no->lat){
+      limite_no->lat=lat;
+    }
+    if(lon < limite_no->lon){
+      limite_no->lon=lon;
+    }         
+    if(lat < limite_se->lat){
+      limite_se->lat=lat;
+    }
+    if(lon > limite_se->lon){
+    limite_se->lon=lon;
+    }
+    liste=liste->suiv;
+    } 
+}
+

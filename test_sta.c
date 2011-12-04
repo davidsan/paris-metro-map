@@ -21,14 +21,15 @@ int main(int argc, char *argv[])
 		return 1;
 		}
 
-	/** A FAIRE :
-	 *
-	 * limites_zone(liste_sta, &no, &se);
-	 *
-	 * printf("Stations dans [%f,%f] et [%f,%f]\n", no.lon, no.lat, se.lon, se.lat);
-	 **/
+	//** A FAIRE :
+	 
+	limites_zone(liste_sta, &no, &se);
+	 
+	printf("Stations dans [%f,%f] et [%f,%f]\n", no.lon, no.lat, se.lon, se.lat);
+	/**/
 	
 	ecrire_liste(stdout, liste_sta);
+	printf("Stations dans [%f,%f] et [%f,%f]\n", no.lon, no.lat, se.lon, se.lat);
 
 	/** Test
 	 *  doit afficher "Malesherbes"

@@ -38,6 +38,7 @@ int main(int argc, char *argv[])
 		}
 
 	ecrire_liste(stdout,liste_con);
+
 	detruire_abr(abr_sta);
 
 	detruire_liste_et_truc(liste_sta);

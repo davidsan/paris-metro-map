@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 	**/
 	
 	detruire_lignes(liste_lignes);
-			afficher_lignes(liste_lignes);
+	
 
 	return 1;
 	}

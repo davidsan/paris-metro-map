@@ -29,16 +29,16 @@ Un_nabr *inserer_abr(Un_nabr *abr, Un_nabr *n){
 }
 
 Un_nabr *construire_abr(Un_elem *liste_sta){
-  Un_nabr *tmp=NULL;
+  Un_nabr *abr=NULL;
   Un_nabr *noeud=NULL;
   Un_elem *mem=liste_sta;
   while(liste_sta){
     noeud = creer_nabr(liste_sta->truc);
-    tmp = inserer_abr(tmp, noeud);
+    abr = inserer_abr(abr, noeud);
     liste_sta = liste_sta->suiv;
   }
   liste_sta=mem;
-  return tmp;
+  return abr;
 }
 
 
@@ -48,9 +48,6 @@ void detruire_abr(Un_nabr *abr){
     detruire_abr(abr->d);
     free(abr);
   }
-  else{
-    free(abr);
-  }	 
 }
 
 Un_truc *chercher_station(Un_nabr *abr, char *nom){
