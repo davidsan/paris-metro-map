@@ -46,6 +46,7 @@ void detruire_abr(Un_nabr *abr){
   if(abr){
     detruire_abr(abr->g);
     detruire_abr(abr->d);
+    detruire_truc(abr->truc);
     free(abr);
   }
 }

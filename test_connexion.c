@@ -42,7 +42,7 @@ int main(int argc, char *argv[])
 	detruire_abr(abr_sta);
 
 	detruire_liste_et_truc(liste_sta);
-
+	
 	detruire_lignes(liste_ligne);
 
 	return 0;
