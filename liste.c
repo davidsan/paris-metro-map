@@ -270,7 +270,6 @@ Un_truc *extraire_liste(Un_elem **liste, Un_truc *truc){
 void limites_zone(Un_elem *liste, Une_coord *limite_no, Une_coord *limite_se){
   float lat;
   float lon;
-  Un_elem *mem;
   
   if(!liste || liste->truc->type !=STA){
     fprintf(stderr, "Erreur : liste vide\n");
