@@ -22,7 +22,8 @@ int main(int argc, char *argv[])
 		}
 
 	//** A FAIRE :
-	 
+	 	ecrire_liste(stdout, liste_sta);
+
 	limites_zone(liste_sta, &no, &se);
 	 
 	printf("Stations dans [%f,%f] et [%f,%f]\n", no.lon, no.lat, se.lon, se.lat);
@@ -40,13 +41,14 @@ int main(int argc, char *argv[])
 	**/
 		
 	abr = construire_abr(liste_sta);
-
+	
 	for(l=liste_sta; l; l=l->suiv){
 	  if (chercher_station(abr, l->truc->data.sta.nom) == NULL){
 	    fprintf(stderr, "Station non trouvee!!!\n");
 	  }
 	}
 	
+	ecrire_liste(stdout, liste_sta);
 	
 	detruire_abr(abr);
 	

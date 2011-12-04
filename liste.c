@@ -49,11 +49,12 @@ void detruire_liste(Un_elem *liste){
 
 void detruire_liste_et_truc(Un_elem *liste){
   Un_elem *tmp;
+  tmp=liste;
   while(liste){
-    tmp=liste->suiv;
     detruire_truc(liste->truc);
-    liste=tmp;
+    liste=liste->suiv;
   }
+  liste=tmp;
   detruire_liste(liste);
 }
 
@@ -269,6 +270,8 @@ Un_truc *extraire_liste(Un_elem **liste, Un_truc *truc){
 void limites_zone(Un_elem *liste, Une_coord *limite_no, Une_coord *limite_se){
   float lat;
   float lon;
+  Un_elem *mem;
+  
   if(!liste || liste->truc->type !=STA){
     fprintf(stderr, "Erreur : liste vide\n");
     return;
@@ -299,6 +302,7 @@ void limites_zone(Un_elem *liste, Une_coord *limite_no, Une_coord *limite_se){
       limite_se->lon=lon;
     }
     liste=liste->suiv;
-  } 
+  }
+  
 }
 
