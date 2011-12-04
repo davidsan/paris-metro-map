@@ -72,7 +72,7 @@ void detruire_lignes(Une_ligne *lligne){
     free(lligne->code);
     free(lligne->color);
     free(lligne);
-    }
+  }
 }
 
 Une_ligne *chercher_ligne(Une_ligne *lligne, char *code){

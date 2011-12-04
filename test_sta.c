@@ -44,7 +44,7 @@ int main(int argc, char *argv[])
    *  extrait la station passé en argument
    *  ne pas oublier de la détruire (memory leak)
    detruire_truc(extraire_liste(&liste_sta,liste_sta->suiv->suiv->truc)->data.sta.nom));
-   **/
+  **/
 
   /** Test
    *  doit afficher "Buno Gironville"
