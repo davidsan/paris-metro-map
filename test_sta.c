@@ -20,14 +20,16 @@ int main(int argc, char *argv[])
 		fprintf(stderr, "Erreur : Lecture fichier stations\n");
 		return 1;
 		}
-	
-	// limites_zone(liste_sta, &no, &se);
 
-	printf("Stations dans [%f,%f] et [%f,%f]\n", no.lon, no.lat, se.lon, se.lat);
+	/** A FAIRE :
+	 *
+	 * limites_zone(liste_sta, &no, &se);
+	 *
+	 * printf("Stations dans [%f,%f] et [%f,%f]\n", no.lon, no.lat, se.lon, se.lat);
+	 **/
 	
 	ecrire_liste(stdout, liste_sta);
 
-	
 	/** Test
 	 *  doit afficher "Malesherbes"
 	 *  c.-à-d.le nom de la station extraite

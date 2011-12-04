@@ -36,7 +36,8 @@ int main(int argc, char *argv[])
 		fprintf(stderr, "Erreur : Lecture fichier connexion\n");
 		return 1;
 		}
-	
+
+	ecrire_liste(stdout,liste_con);
 	detruire_abr(abr_sta);
 
 	detruire_liste_et_truc(liste_sta);

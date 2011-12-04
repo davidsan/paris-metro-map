@@ -25,6 +25,7 @@ Une_ligne *lire_lignes(char *nom_fichier){
     ligne=(Une_ligne*)malloc(sizeof(Une_ligne));
     if(!ligne){
       fprintf(stderr,"Erreur : allocation mémoire\n");
+      free(str);
       return NULL;
     }
     ligne->code=strdup(str);
@@ -37,12 +38,14 @@ Une_ligne *lire_lignes(char *nom_fichier){
     str=strtok(NULL,";");
     if (!str){
       fprintf(stderr,"Erreur : lecture de l'intervalle\n");
+      free(ligne);
       return NULL;
     }
     ligne->intervalle=atof(str);
     str=strtok(NULL,";");
     if (!str){
       fprintf(stderr,"Erreur : lecture de la couleur de la ligne\n");
+      free(ligne);
       return NULL;
     }
     ligne->color=strdup(str);
@@ -52,6 +55,7 @@ Une_ligne *lire_lignes(char *nom_fichier){
       deb=ligne;
     prec=ligne;
   }
+  prec->suiv=NULL; 
   return deb;
 }
 
@@ -63,12 +67,12 @@ void afficher_lignes(Une_ligne *lligne){
 }
 
 void detruire_lignes(Une_ligne *lligne){
-  if(lligne){
-    detruire_lignes(lligne->suiv);
+  if(lligne!=NULL){
+    detruire_lignes(lligne->suiv);   
     free(lligne->code);
     free(lligne->color);
     free(lligne);
-  }
+    }
 }
 
 Une_ligne *chercher_ligne(Une_ligne *lligne, char *code){

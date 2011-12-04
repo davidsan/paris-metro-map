@@ -21,9 +21,10 @@ int main(int argc, char *argv[])
 
 	/** Test
 	    afficher_lignes(chercher_ligne(liste_lignes, "T1"));
-	 **/
+	**/
 	
 	detruire_lignes(liste_lignes);
-		
+			afficher_lignes(liste_lignes);
+
 	return 1;
 	}
