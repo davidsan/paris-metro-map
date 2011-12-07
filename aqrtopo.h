@@ -32,4 +32,8 @@ Un_truc *chercher_aqr(Un_noeud *aqr, Une_coord coord);
 Un_elem *chercher_zone(Un_noeud *aqr, Un_elem *liste, Une_coord limite_no, Une_coord limite_se);
 
 int hauteur_aqr(Un_noeud *aqr);
+
+/* fonctions ajoutées */
+int max(int a, int b);
+
 #endif

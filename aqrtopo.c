@@ -150,6 +150,23 @@ Un_elem *chercher_zone(Un_noeud *aqr, Un_elem *liste, Une_coord limite_no, Une_c
   return NULL;
 }
 
+int max(int a, int b){
+  if(a <= b){
+    return b;
+  }
+  else{
+    return a;
+  }
+}
+
 int hauteur_aqr(Un_noeud *aqr){
-  return 0;
+  if(!aqr){
+    return 0;
+  }
+  if(aqr->truc != NULL){
+    return 1;
+  }
+  else{
+    return 1 + max(max(hauteur_aqr(aqr->no), hauteur_aqr(aqr->ne)), max(hauteur_aqr(aqr->so), hauteur_aqr(aqr->se)));
+  }
 }
