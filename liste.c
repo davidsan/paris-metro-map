@@ -103,9 +103,7 @@ Un_elem *lire_stations( char *nom_fichier){
       fclose(f);
       return NULL;
     }
-        
     liste=inserer_liste_trie(liste, truc);
-    
   }
   fclose(f);
   return liste;
@@ -117,10 +115,8 @@ Un_elem *inserer_deb_liste(Un_elem *liste, Un_truc *truc){
     fprintf(stderr, "Erreur : allocation mémoire\n");
     return NULL;
   }
-  
   n->truc=truc;
   n->suiv=liste;
-  
   return n;
 }
 
@@ -242,15 +238,12 @@ Un_truc *extraire_liste(Un_elem **liste, Un_truc *truc){
   Un_elem *tmp=NULL;
   Un_elem *prec=NULL;
   Un_truc *extract=NULL;
-  
   // truc trouvé en position 1
   if((*liste)->truc==truc){
     return extraire_deb_liste(liste);
   }
-
   // truc ne sera pas en position 1
-  tmp=*liste;
-  
+  tmp=*liste;  
   while((*liste)->suiv){
     prec=*liste;
     *liste=(*liste)->suiv;
@@ -260,8 +253,7 @@ Un_truc *extraire_liste(Un_elem **liste, Un_truc *truc){
       prec->suiv=*liste;
       break;
     }
-  }
-  
+  }  
   *liste=tmp;
   return extract;  
 }
@@ -301,7 +293,5 @@ void limites_zone(Un_elem *liste, Une_coord *limite_no, Une_coord *limite_se){
       limite_se->lon=lon;
     }
     liste=liste->suiv;
-  }
-  
+  } 
 }
-

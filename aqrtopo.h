@@ -21,14 +21,15 @@ typedef struct _un_noeud
 
 /* fonctions generiques */
 
-Un_noeud *inserer_aqr(un_noeud *aqr, Une_coord *limite_no, Une_coord *limite_se, Un_truc *truc);
+Un_noeud *inserer_aqr(Un_noeud *aqr, Une_coord limite_no, Une_coord limite_se, Un_truc *truc);
 
 Un_noeud *construire_aqr(Un_elem *liste);
 
 void detruire_aqr(Un_noeud *aqr);
 
-Un_truc *chercher_aqr(Un_noeud *aqr, Une_coord *coord);
+Un_truc *chercher_aqr(Un_noeud *aqr, Une_coord coord);
 
-Un_elem *chercher_zone(Un_noeud *aqr, Une_coord *limite_no, Une_coord *limite_se);
+Un_elem *chercher_zone(Un_noeud *aqr, Un_elem *liste, Une_coord limite_no, Une_coord limite_se);
 
+int hauteur_aqr(Un_noeud *aqr);
 #endif
