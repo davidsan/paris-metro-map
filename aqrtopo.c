@@ -27,24 +27,40 @@ Un_noeud *inserer_aqr(Un_noeud *aqr, Une_coord limite_no, Une_coord limite_se, U
   m.lon=(limite_no.lon+limite_se.lon)/2;
   m.lat=(limite_no.lat+limite_se.lat)/2;
  
-  if(truc->coord.lon >= limite_no.lon && truc->coord.lon <= m.lon && truc->coord.lat >= m.lat && truc->coord.lat <= limite_no.lat){
-    aqr->no = inserer_aqr(aqr->no, limite_no, m, truc);
-  }
-  if(truc->coord.lon < limite_se.lon && truc->coord.lon > m.lon && truc->coord.lat < m.lat && truc->coord.lat > limite_se.lat){
-    aqr->se = inserer_aqr(aqr->se, m, limite_se, truc);
-  }
+  if(truc->coord.lon >= limite_no.lon &&				\
+     truc->coord.lon <= m.lon &&					\
+     truc->coord.lat >= m.lat &&					\
+     truc->coord.lat <= limite_no.lat)
+    {
+      aqr->no = inserer_aqr(aqr->no, limite_no, m, truc);
+    }
+  if(truc->coord.lon < limite_se.lon &&					\
+     truc->coord.lon > m.lon &&						\
+     truc->coord.lat < m.lat &&						\
+     truc->coord.lat > limite_se.lat)
+    {
+      aqr->se = inserer_aqr(aqr->se, m, limite_se, truc);
+    }
 
   tmp.lat = limite_se.lat;
   tmp.lon = limite_no.lon;
-  if(truc->coord.lon >= limite_no.lon && truc->coord.lon <= m.lon && truc->coord.lat >= limite_se.lat && truc->coord.lat < m.lat){
-    aqr->so = inserer_aqr(aqr->so, tmp, m , truc);
-  }
+  if(truc->coord.lon >= limite_no.lon &&				\
+     truc->coord.lon <= m.lon &&					\
+     truc->coord.lat >= limite_se.lat &&				\
+     truc->coord.lat < m.lat)
+    {
+      aqr->so = inserer_aqr(aqr->so, tmp, m , truc);
+    }
  
   tmp.lon = limite_se.lon;
   tmp.lat = limite_no.lat;
-  if(truc->coord.lon > m.lon && truc->coord.lon <= limite_se.lon && truc->coord.lat >= m.lat && truc->coord.lat <= limite_no.lat){
-    aqr->ne = inserer_aqr(aqr, m, tmp, truc);
-  }
+  if(truc->coord.lon > m.lon &&						\
+     truc->coord.lon <= limite_se.lon &&				\
+     truc->coord.lat >= m.lat &&					\
+     truc->coord.lat <= limite_no.lat)
+    {
+      aqr->ne = inserer_aqr(aqr, m, tmp, truc);
+    }
  
   return aqr;
 }
@@ -81,30 +97,44 @@ Un_truc *chercher_aqr(Un_noeud *aqr, Une_coord coord){
   m.lon=(limite_no.lon+limite_se.lon)/2;
   m.lat=(limite_no.lat+limite_se.lat)/2;
 
-  if(aqr->truc->coord.lon >= limite_no.lon && aqr->truc->coord.lon <= m.lon && aqr->truc->coord.lat >= m.lat && aqr->truc->coord.lat <= limite_no.lat){
-    return chercher_aqr(aqr->no, coord);
-  }
+  if(aqr->truc->coord.lon >= limite_no.lon &&				\
+     aqr->truc->coord.lon <= m.lon &&					\
+     aqr->truc->coord.lat >= m.lat &&					\
+     aqr->truc->coord.lat <= limite_no.lat)
+    {
+      return chercher_aqr(aqr->no, coord);
+    }
   
-  if(aqr->truc->coord.lon < limite_se.lon && aqr->truc->coord.lon > m.lon && aqr->truc->coord.lat < m.lat && aqr->truc->coord.lat > limite_se.lat){
-    return chercher_aqr(aqr->se, coord);
-  }
+  if(aqr->truc->coord.lon < limite_se.lon &&				\
+     aqr->truc->coord.lon > m.lon &&					\
+     aqr->truc->coord.lat < m.lat &&					\
+     aqr->truc->coord.lat > limite_se.lat)
+    {
+      return chercher_aqr(aqr->se, coord);
+    }
 
   tmp.lat = limite_se.lat;
   tmp.lon = limite_no.lon;
 
-  if(aqr->truc->coord.lon >= limite_no.lon && aqr->truc->coord.lon <= m.lon && aqr->truc->coord.lat >= limite_se.lat && aqr->truc->coord.lat < m.lat){
-    return chercher_aqr(aqr->so, coord);
-  }
+  if(aqr->truc->coord.lon >= limite_no.lon &&				\
+     aqr->truc->coord.lon <= m.lon &&					\
+     aqr->truc->coord.lat >= limite_se.lat &&				\
+     aqr->truc->coord.lat < m.lat)
+    {
+      return chercher_aqr(aqr->so, coord);
+    }
   else{
+    /*
+      if(aqr->truc->coord.lon > m.lon &&				\
+      aqr->truc->coord.lon <= limite_se.lon &&				\
+      aqr->truc->coord.lat >= m.lat &&					\
+      aqr->truc->coord.lat <= limite_no.lat)
+    */
     tmp.lon = limite_se.lon;
     tmp.lat = limite_no.lat;
-    
-    // if(aqr->truc->coord.lon > m.lon && aqr->truc->coord.lon <= limite_se.lon && aqr->truc->coord.lat >= m.lat && aqr->truc->coord.lat <= limite_no.lat){
     return chercher_aqr(aqr->ne,coord);
   }
 }
-
-
 
 Un_noeud *construire_aqr(Un_elem *liste){
   Un_elem *l=NULL;
@@ -148,7 +178,9 @@ Un_noeud *construire_aqr(Un_elem *liste){
 
 
 Un_elem *chercher_zone(Un_noeud *aqr, Un_elem *liste, Une_coord limite_no, Une_coord limite_se){
-  return NULL;
+  Un_elem *res=NULL;
+  
+  return res;
 }
 
 int max(int a, int b){
