@@ -1,0 +1,1522 @@
+# A3
+A3;Cergy le Haut;Cergy St Christophe;0.0
+A3;Cergy St Christophe;Cergy le Haut;0.0
+A3;Cergy St Christophe;Cergy Prefecture;0.0
+A3;Cergy Prefecture;Cergy St Christophe;0.0
+A3;Cergy Prefecture;Neuville Universite;0.0
+A3;Neuville Universite;Cergy Prefecture;0.0
+A3;Neuville Universite;Conflans Fin d'Oise;0.0
+A3;Conflans Fin d'Oise;Neuville Universite;0.0
+A3;Conflans Fin d'Oise;Acheres Ville;0.0
+A3;Acheres Ville;Conflans Fin d'Oise;0.0
+A3;Acheres Ville;Maisons Laffitte;0.0
+A3;Maisons Laffitte;Acheres Ville;0.0
+# A5
+A5;Poissy;Acheres Grand Cormier;0.0
+A5;Acheres Grand Cormier;Poissy;0.0
+A5;Acheres Grand Cormier;Maisons Laffitte;0.0
+A5;Maisons Laffitte;Acheres Grand Cormier;0.0
+# A35
+A35;Maisons Laffitte;Sartrouville;0.0
+A35;Sartrouville;Maisons Laffitte;0.0
+A35;Sartrouville;Houilles Carrieres sur Seine;0.0
+A35;Houilles Carrieres sur Seine;Sartrouville;0.0
+A35;Houilles Carrieres sur Seine;Nanterre Prefecture;0.0
+A35;Nanterre Prefecture;Houilles Carrieres sur Seine;0.0
+# A1
+A1;St Germain en Laye;Le Vesinet Le Pecq;0.0
+A1;Le Vesinet Le Pecq;St Germain en Laye;0.0
+A1;Le Vesinet Le Pecq;Le Vesinet Centre;0.0
+A1;Le Vesinet Centre;Le Vesinet Le Pecq;0.0
+A1;Le Vesinet Centre;Chatou Croissy;0.0
+A1;Chatou Croissy;Le Vesinet Centre;0.0
+A1;Chatou Croissy;Rueil Malmaison;0.0
+A1;Rueil Malmaison;Chatou Croissy;0.0
+A1;Rueil Malmaison;Nanterre Ville;0.0
+A1;Nanterre Ville;Rueil Malmaison;0.0
+A1;Nanterre Ville;Nanterre Univerisite;0.0
+A1;Nanterre Univerisite;Nanterre Ville;0.0
+A1;Nanterre Univerisite;Nanterre Prefecture;0.0
+A1;Nanterre Prefecture;Nanterre Univerisite;0.0
+# A
+A;Nanterre Prefecture;La Defense;0.0
+A;La Defense;Nanterre Prefecture;0.0
+A;La Defense;Etoile Charles de Gaulle;0.0
+A;Etoile Charles de Gaulle;La Defense;0.0
+A;Etoile Charles de Gaulle;Auber;0.0
+A;Auber;Etoile Charles de Gaulle;0.0
+A;Auber;Chatelet Les Halles;0.0
+A;Chatelet Les Halles;Auber;0.0
+A;Chatelet Les Halles;Gare de Lyon;0.0
+A;Gare de Lyon;Chatelet Les Halles;0.0
+A;Gare de Lyon;Nation;0.0
+A;Nation;Gare de Lyon;0.0
+A;Nation;Vincennes;0.0
+A;Vincennes;Nation;0.0
+#P a Auber
+P;Haussmann St Lazare;Auber;0.0
+P;Auber;Haussmann St Lazare;0.0
+P;Havre Caumartin;Auber;0.0
+P;Auber;Havre Caumartin;0.0
+P;Opera;Auber;0.0
+P;Auber;Opera;0.0
+P;Saint Lazare;Auber;0.0
+P;Auber;Saint Lazare;0.0
+#P a Chatelet
+P;Chatelet;Chatelet Les Halles;0.0
+P;Chatelet Les Halles;Chatelet;0.0
+P;Les Halles;Chatelet Les Halles;0.0
+P;Chatelet Les Halles;Les Halles;0.0
+# A2
+A2;Boissy St Leger;Sucy Bonneuil;0.0
+A2;Sucy Bonneuil;Boissy St Leger;0.0
+A2;Sucy Bonneuil;La Varenne Chevrieres;0.0
+A2;La Varenne Chevrieres;Sucy Bonneuil;0.0
+A2;La Varenne Chevrieres;Champigny;0.0
+A2;Champigny;La Varenne Chevrieres;0.0
+A2;Champigny;Le Parc de St Maur;0.0
+A2;Le Parc de St Maur;Champigny;0.0
+A2;Le Parc de St Maur;St Maur Creteil;0.0
+A2;St Maur Creteil;Le Parc de St Maur;0.0
+A2;St Maur Creteil;Joinville le Pont;0.0
+A2;Joinville le Pont;St Maur Creteil;0.0
+A2;Joinville le Pont;Nogent sur Marne;0.0
+A2;Nogent sur Marne;Joinville le Pont;0.0
+A2;Nogent sur Marne;Fontenay sous Bois;0.0
+A2;Fontenay sous Bois;Nogent sur Marne;0.0
+A2;Fontenay sous Bois;Vincennes;0.0
+A2;Vincennes;Fontenay sous Bois;0.0
+# A4
+A4;Marne la Vallee Chessy;Val d'Europe;0.0
+A4;Val d'Europe;Marne la Vallee Chessy;0.0
+A4;Val d'Europe;Bussy St Georges;0.0
+A4;Bussy St Georges;Val d'Europe;0.0
+A4;Bussy St Georges;Torcy;0.0
+A4;Torcy;Bussy St Georges;0.0
+A4;Torcy;Lognes;0.0
+A4;Lognes;Torcy;0.0
+A4;Lognes;Noisiel;0.0
+A4;Noisiel;Lognes;0.0
+A4;Noisiel;Noisy Champs;0.0
+A4;Noisy Champs;Noisiel;0.0
+A4;Noisy Champs;Noisy le Grand Mont d'Est;0.0
+A4;Noisy le Grand Mont d'Est;Noisy Champs;0.0
+A4;Noisy le Grand Mont d'Est;Brie sur Marne;0.0
+A4;Brie sur Marne;Noisy le Grand Mont d'Est;0.0
+A4;Brie sur Marne;Neuilly Plaisance;0.0
+A4;Neuilly Plaisance;Brie sur Marne;0.0
+A4;Neuilly Plaisance;Val de Fontenay;0.0
+A4;Val de Fontenay;Neuilly Plaisance;0.0
+A4;Val de Fontenay;Vincennes;0.0
+A4;Vincennes;Val de Fontenay;0.0
+# B4
+B4;St Remy les chevreuse;Courcelle sur Yvette;0.0
+B4;Courcelle sur Yvette;St Remy les chevreuse;0.0
+B4;Courcelle sur Yvette;Gif sur Yvette;0.0
+B4;Gif sur Yvette;Courcelle sur Yvette;0.0
+B4;Gif sur Yvette;La Hacquiniere;0.0
+B4;La Hacquiniere;Gif sur Yvette;0.0
+B4;La Hacquiniere;Bures sur Yvette;0.0
+B4;Bures sur Yvette;La Hacquiniere;0.0
+B4;Bures sur Yvette;Orsay la Ville;0.0
+B4;Orsay la Ville;Bures sur Yvette;0.0
+B4;Orsay la Ville;Le Guichet;0.0
+B4;Le Guichet;Orsay la Ville;0.0
+B4;Le Guichet;Lozere;0.0
+B4;Lozere;Le Guichet;0.0
+B4;Lozere;Palaiseau Villebon;0.0
+B4;Palaiseau Villebon;Lozere;0.0
+B4;Palaiseau Villebon;Palaiseau;0.0
+B4;Palaiseau;Palaiseau Villebon;0.0
+B4;Palaiseau;Massy Palaiseau;0.0
+B4;Massy Palaiseau;Palaiseau;0.0
+B4;Massy Palaiseau;Massy Verrieres;0.0
+B4;Massy Verrieres;Massy Palaiseau;0.0
+B4;Massy Verrieres;Les Baconnets;0.0
+B4;Les Baconnets;Massy Verrieres;0.0
+B4;Les Baconnets;Fontaine Michalon;0.0
+B4;Fontaine Michalon;Les Baconnets;0.0
+B4;Fontaine Michalon;Antony;0.0
+B4;Antony;Fontaine Michalon;0.0
+B4;Antony;La Croix Berny;0.0
+B4;La Croix Berny;Antony;0.0
+B4;La Croix Berny;Parc de Sceaux;0.0
+B4;Parc de Sceaux;La Croix Berny;0.0
+B4;Parc de Sceaux;Bourg la Reine;0.0
+B4;Bourg la Reine;Parc de Sceaux;0.0
+# B2
+B2;Robinson;Fontenay aux Roses;0.0
+B2;Fontenay aux Roses;Robinson;0.0
+B2;Fontenay aux Roses;Sceaux;0.0
+B2;Sceaux;Fontenay aux Roses;0.0
+B2;Sceaux;Bourg la Reine;0.0
+B2;Bourg la Reine;Sceaux;0.0
+# B
+B;Bourg la Reine;Bagneux;0.0
+B;Bagneux;Bourg la Reine;0.0
+B;Bagneux;Arcueil Cachan;0.0
+B;Arcueil Cachan;Bagneux;0.0
+B;Arcueil Cachan;Laplace;0.0
+B;Laplace;Arcueil Cachan;0.0
+B;Laplace;Gentilly;0.0
+B;Gentilly;Laplace;0.0
+B;Gentilly;Cite Universitaire;0.0
+B;Cite Universitaire;Gentilly;0.0
+B;Cite Universitaire;Denfert Rochereau;0.0
+B;Denfert Rochereau;Cite Universitaire;0.0
+B;Denfert Rochereau;Port Royal;0.0
+B;Port Royal;Denfert Rochereau;0.0
+B;Port Royal;Luxembourg;0.0
+B;Luxembourg;Port Royal;0.0
+B;Luxembourg;St Michel Notre Dame;0.0
+B;St Michel Notre Dame;Luxembourg;0.0
+B;St Michel Notre Dame;Chatelet Les Halles;0.0
+B;Chatelet Les Halles;St Michel Notre Dame;0.0
+B;Chatelet Les Halles;Gare du Nord;0.0
+B;Gare du Nord;Chatelet Les Halles;0.0
+B;Gare du Nord;La Plaine Stade de France;0.0
+B;La Plaine Stade de France;Gare du Nord;0.0
+B;La Plaine Stade de France;La Courneuve Aubervilliers;0.0
+B;La Courneuve Aubervilliers;La Plaine Stade de France;0.0
+B;La Courneuve Aubervilliers;Le Bourget;0.0
+B;Le Bourget;La Courneuve Aubervilliers;0.0
+B;Le Bourget;Drancy;0.0
+B;Drancy;Le Bourget;0.0
+B;Drancy;Le Blanc Mesnil;0.0
+B;Le Blanc Mesnil;Drancy;0.0
+B;Le Blanc Mesnil;Aulnay sous Bois;0.0
+B;Aulnay sous Bois;Le Blanc Mesnil;0.0
+# P a Gare du Nord
+P;Gare du Nord;La Chapelle;0.0
+P;La Chapelle;Gare du Nord;0.0
+P;Gare du Nord;Magenta;0.0
+P;Magenta;Gare du Nord;0.0
+P;Gare de l'Est;Magenta;0.0
+P;Magenta;Gare de l'Est;0.0
+# P St Michel
+P;Cluny.La Sorbonne;St Michel Notre Dame;0.0
+P;St Michel Notre Dame;Cluny.La Sorbonne;0.0
+P;Saint Michel;St Michel Notre Dame;0.0
+P;St Michel Notre Dame;Saint Michel;0.0
+# B3
+B3;Aeroport Charles de Gaulle-2;Aeroport Charles de Gaulle-1;0.0
+B3;Aeroport Charles de Gaulle-1;Aeroport Charles de Gaulle-2;0.0
+B3;Aeroport Charles de Gaulle-1;Parc des Expositions;0.0
+B3;Parc des Expositions;Aeroport Charles de Gaulle-1;0.0
+B3;Parc des Expositions;Villepinte;0.0
+B3;Villepinte;Parc des Expositions;0.0
+B3;Villepinte;Sevran Beaudottes;0.0
+B3;Sevran Beaudottes;Villepinte;0.0
+B3;Sevran Beaudottes;Aulnay sous Bois;0.0
+B3;Aulnay sous Bois;Sevran Beaudottes;0.0
+# B5
+B5;Mitry Claye;Villeparisis Mitry le Neuf;0.0
+B5;Villeparisis Mitry le Neuf;Mitry Claye;0.0
+B5;Villeparisis Mitry le Neuf;Vert Galant;0.0
+B5;Vert Galant;Villeparisis Mitry le Neuf;0.0
+B5;Vert Galant;Sevran Livry;0.0
+B5;Sevran Livry;Vert Galant;0.0
+B5;Sevran Livry;Aulnay sous Bois;0.0
+B5;Aulnay sous Bois;Sevran Livry;0.0
+# C1
+C1;Pontoise;St Ouen l'Aumone;0.0
+C1;St Ouen l'Aumone;Pontoise;0.0
+C1;St Ouen l'Aumone;St Ouen l'Aumone Liesse;0.0
+C1;St Ouen l'Aumone Liesse;St Ouen l'Aumone;0.0
+C1;St Ouen l'Aumone Liesse;Pierrelaye;0.0
+C1;Pierrelaye;St Ouen l'Aumone Liesse;0.0
+C1;Pierrelaye;Montigny Beauchamp;0.0
+C1;Montigny Beauchamp;Pierrelaye;0.0
+C1;Montigny Beauchamp;Franconville Le Plessis Bouchard;0.0
+C1;Franconville Le Plessis Bouchard;Montigny Beauchamp;0.0
+C1;Franconville Le Plessis Bouchard;Cernay;0.0
+C1;Cernay;Franconville Le Plessis Bouchard;0.0
+C1;Cernay;Ermont Eaubonne;0.0
+C1;Ermont Eaubonne;Cernay;0.0
+C1;Ermont Eaubonne;Saint Gratien;0.0
+C1;Saint Gratien;Ermont Eaubonne;0.0
+C1;Saint Gratien;Epinay sur Seine;0.0
+C1;Epinay sur Seine;Saint Gratien;0.0
+C1;Epinay sur Seine;Gennevilliers;0.0
+C1;Gennevilliers;Epinay sur Seine;0.0
+C1;Gennevilliers;Les Gresillions;0.0
+C1;Les Gresillions;Gennevilliers;0.0
+C1;Les Gresillions;Saint Ouen;0.0
+C1;Saint Ouen;Les Gresillions;0.0
+C1;Saint Ouen;Porte de Clichy;0.0
+C1;Porte de Clichy;Saint Ouen;0.0
+C1;Porte de Clichy;Pereire Levallois;0.0
+C1;Pereire Levallois;Porte de Clichy;0.0
+C1;Pereire Levallois;Neuilly Porte Maillot;0.0
+C1;Neuilly Porte Maillot;Pereire Levallois;0.0
+C1;Neuilly Porte Maillot;Avenue Foch;0.0
+C1;Avenue Foch;Neuilly Porte Maillot;0.0
+C1;Avenue Foch;Avenue Henri Martin;0.0
+C1;Avenue Henri Martin;Avenue Foch;0.0
+C1;Avenue Henri Martin;Boulainvilliers;0.0
+C1;Boulainvilliers;Avenue Henri Martin;0.0
+C1;Boulainvilliers;Av du Pdt Kennedy;0.0
+C1;Av du Pdt Kennedy;Boulainvilliers;0.0
+C1;Av du Pdt Kennedy;Champs de Mars Tour Eiffel;0.0
+C1;Champs de Mars Tour Eiffel;Av du Pdt Kennedy;0.0
+# Coorespondances C ouest parisien
+P;Boulainvilliers;La Muette;0.0
+P;La Muette;Boulainvilliers;0.0
+P;Neuilly Porte Maillot;Porte Maillot;0.0
+P;Porte Maillot;Neuilly Porte Maillot;0.0
+P;Pereire Levallois;Pereire;0.0
+P;Pereire;Pereire Levallois;0.0
+# C7
+C7;St Quentin en Yvelines;Saint Cyr;0.0
+C7;Saint Cyr;St Quentin en Yvelines;0.0
+C7;Saint Cyr;Versailles Chantiers;0.0
+C7;Versailles Chantiers;Saint Cyr;0.0
+C7;Versailles Chantiers;Viroflay Rive Gauche;0.0
+C7;Viroflay Rive Gauche;Versailles Chantiers;0.0
+# C5
+C5;Versailles Rive Gauche;Porchefontaine;0.0
+C5;Porchefontaine;Versailles Rive Gauche;0.0
+C5;Porchefontaine;Viroflay Rive Gauche;0.0
+C5;Viroflay Rive Gauche;Porchefontaine;0.0
+# C57
+C57;Chaville Velisy;Viroflay Rive Gauche;0.0
+C57;Viroflay Rive Gauche;Chaville Velisy;0.0
+C57;Viroflay Rive Gauche;Meudon Val Fleury;0.0
+C57;Meudon Val Fleury;Viroflay Rive Gauche;0.0
+C57;Meudon Val Fleury;Issy;0.0
+C57;Issy;Meudon Val Fleury;0.0
+C57;Issy;Issy Val de Seine;0.0
+C57;Issy Val de Seine;Issy;0.0
+C57;Issy Val de Seine;Boulevard Victor;0.0
+C57;Boulevard Victor;Issy Val de Seine;0.0
+C57;Boulevard Victor;Javel;0.0
+C57;Javel;Boulevard Victor;0.0
+C57;Javel;Champs de Mars Tour Eiffel;0.0
+C57;Champs de Mars Tour Eiffel;Javel;0.0
+# C
+C;Choisy le Roy;Les Ardoines;0.0
+C;Les Ardoines;Choisy le Roy;0.0
+C;Les Ardoines;Vitry sur Seine;0.0
+C;Vitry sur Seine;Les Ardoines;0.0
+C;Vitry sur Seine;Ivry sur Seine;0.0
+C;Ivry sur Seine;Vitry sur Seine;0.0
+C;Ivry sur Seine;Bibliotheque Francois Mitterrand;0.0
+C;Bibliotheque Francois Mitterrand;Ivry sur Seine;0.0
+C;Bibliotheque Francois Mitterrand;Gare d'Austerlitz;0.0
+C;Gare d'Austerlitz;Bibliotheque Francois Mitterrand;0.0
+C;Gare d'Austerlitz;St Michel Notre Dame;0.0
+C;St Michel Notre Dame;Gare d'Austerlitz;0.0
+C;St Michel Notre Dame;Musee d'Orsay;0.0
+C;Musee d'Orsay;St Michel Notre Dame;0.0
+C;Musee d'Orsay;Invalides;0.0
+C;Invalides;Musee d'Orsay;0.0
+C;Invalides;Pont de l'Alma;0.0
+C;Pont de l'Alma;Invalides;0.0
+C;Pont de l'Alma;Champs de Mars Tour Eiffel;0.0
+C;Champs de Mars Tour Eiffel;Pont de l'Alma;0.0
+# C2
+C2;Massy Palaiseau;Massy Verrieres;0.0
+C2;Massy Verrieres;Massy Palaiseau;0.0
+C2;Massy Verrieres;Chemin d'Antony;0.0
+C2;Chemin d'Antony;Massy Verrieres;0.0
+C2;Chemin d'Antony;Rungis la Fraternelle;0.0
+C2;Rungis la Fraternelle;Chemin d'Antony;0.0
+C2;Rungis la Fraternelle;Pont de Rungis Aeroport d'Orly;0.0
+C2;Pont de Rungis Aeroport d'Orly;Rungis la Fraternelle;0.0
+C2;Pont de Rungis Aeroport d'Orly;Orly Ville;0.0
+C2;Orly Ville;Pont de Rungis Aeroport d'Orly;0.0
+C2;Orly Ville;Les Saules;0.0
+C2;Les Saules;Orly Ville;0.0
+C2;Les Saules;Choisy le Roy;0.0
+C2;Choisy le Roy;Les Saules;0.0
+# C468
+C468;Athis Mons;Ablon;0.0
+C468;Ablon;Athis Mons;0.0
+C468;Ablon;Villeneuve le Roi;0.0
+C468;Villeneuve le Roi;Ablon;0.0
+C468;Villeneuve le Roi;Choisy le Roy;0.0
+C468;Choisy le Roy;Villeneuve le Roi;0.0
+# C46
+C46;Bretigny sur Orge;St Michel sur Orge;0.0
+C46;St Michel sur Orge;Bretigny sur Orge;0.0
+C46;St Michel sur Orge;St Genevieve des Bois;0.0
+C46;St Genevieve des Bois;St Michel sur Orge;0.0
+C46;St Genevieve des Bois;Epinay sur Orge;0.0
+C46;Epinay sur Orge;St Genevieve des Bois;0.0
+C46;Epinay sur Orge;Savigny sur Orge;0.0
+C46;Savigny sur Orge;Epinay sur Orge;0.0
+C46;Savigny sur Orge;Juvisy sur Orge;0.0
+C46;Juvisy sur Orge;Savigny sur Orge;0.0
+C46;Juvisy sur Orge;Athis Mons;0.0
+C46;Athis Mons;Juvisy sur Orge;0.0
+# C8
+C8;Versailles Chantiers;Petit Jouy Les Loges;0.0
+C8;Petit Jouy Les Loges;Versailles Chantiers;0.0
+C8;Petit Jouy Les Loges;Jouy en josas;0.0
+C8;Jouy en josas;Petit Jouy Les Loges;0.0
+C8;Jouy en josas;Vauboyen;0.0
+C8;Vauboyen;Jouy en josas;0.0
+C8;Vauboyen;Bievres;0.0
+C8;Bievres;Vauboyen;0.0
+C8;Bievres;Igny;0.0
+C8;Igny;Bievres;0.0
+C8;Igny;Massy Palaiseau;0.0
+C8;Massy Palaiseau;Igny;0.0
+C8;Massy Palaiseau;Longjumeau;0.0
+C8;Longjumeau;Massy Palaiseau;0.0
+C8;Longjumeau;Chilly Mazarin;0.0
+C8;Chilly Mazarin;Longjumeau;0.0
+C8;Chilly Mazarin;Gravigny Balizy;0.0
+C8;Gravigny Balizy;Chilly Mazarin;0.0
+C8;Gravigny Balizy;Petit Vaux;0.0
+C8;Petit Vaux;Gravigny Balizy;0.0
+C8;Petit Vaux;Savigny sur Orge;0.0
+C8;Savigny sur Orge;Petit Vaux;0.0
+# C4
+C4;Dourdan la foret;Dourdan;0.0
+C4;Dourdan;Dourdan la foret;0.0
+C4;Dourdan;Sermaise;0.0
+C4;Sermaise;Dourdan;0.0
+C4;Sermaise;St Cheron;0.0
+C4;St Cheron;Sermaise;0.0
+C4;St Cheron;Breuillet Village;0.0
+C4;Breuillet Village;St Cheron;0.0
+C4;Breuillet Village;Breullet Bruyeres le chatel;0.0
+C4;Breullet Bruyeres le chatel;Breuillet Village;0.0
+C4;Breullet Bruyeres le chatel;Egly;0.0
+C4;Egly;Breullet Bruyeres le chatel;0.0
+C4;Egly;Arpajon;0.0
+C4;Arpajon;Egly;0.0
+C4;Arpajon;La Norville St Germain Les Arpajon;0.0
+C4;La Norville St Germain Les Arpajon;Arpajon;0.0
+C4;La Norville St Germain Les Arpajon;Bretigny sur Orge;0.0
+C4;Bretigny sur Orge;La Norville St Germain Les Arpajon;0.0
+# C6
+C6;St Martin d'Etampes;Etampes;0.0
+C6;Etampes;St Martin d'Etampes;0.0
+C6;Etampes;Etrechy;0.0
+C6;Etrechy;Etampes;0.0
+C6;Etrechy;Chamarande;0.0
+C6;Chamarande;Etrechy;0.0
+C6;Chamarande;Lardy;0.0
+C6;Lardy;Chamarande;0.0
+C6;Lardy;Bouray;0.0
+C6;Bouray;Lardy;0.0
+C6;Bouray;Marrolles en Hurepoix;0.0
+C6;Marrolles en Hurepoix;Bouray;0.0
+C6;Marrolles en Hurepoix;Bretigny sur Orge;0.0
+C6;Bretigny sur Orge;Marrolles en Hurepoix;0.0
+# D1
+D1;Orry la Ville;La Borne Blanche;0.0
+D1;La Borne Blanche;Orry la Ville;0.0
+D1;La Borne Blanche;Survilliers Fosses;0.0
+D1;Survilliers Fosses;La Borne Blanche;0.0
+D1;Survilliers Fosses;Louvres;0.0
+D1;Louvres;Survilliers Fosses;0.0
+D1;Louvres;Les Noux;0.0
+D1;Les Noux;Louvres;0.0
+D1;Les Noux;Goussainville;0.0
+D1;Goussainville;Les Noux;0.0
+D1;Goussainville;Villiers le Bel Gonesse Amouville;0.0
+D1;Villiers le Bel Gonesse Amouville;Goussainville;0.0
+D1;Villiers le Bel Gonesse Amouville;Garges Sarcelles;0.0
+D1;Garges Sarcelles;Villiers le Bel Gonesse Amouville;0.0
+D1;Garges Sarcelles;Pierrefitte Stains;0.0
+D1;Pierrefitte Stains;Garges Sarcelles;0.0
+D1;Pierrefitte Stains;St Denis;0.0
+D1;St Denis;Pierrefitte Stains;0.0
+D1;St Denis;Stade de France St Denis;0.0
+D1;Stade de France St Denis;St Denis;0.0
+D1;Stade de France St Denis;Gare du Nord;0.0
+D1;Gare du Nord;Stade de France St Denis;0.0
+D1;Gare du Nord;Chatelet Les Halles;0.0
+D1;Chatelet Les Halles;Gare du Nord;0.0
+D1;Chatelet Les Halles;Gare de Lyon;0.0
+D1;Gare de Lyon;Chatelet Les Halles;0.0
+D1;Gare de Lyon;Maisons Alfort Alfortville;0.0
+D1;Maisons Alfort Alfortville;Gare de Lyon;0.0
+D1;Maisons Alfort Alfortville;Le Vert de Maisons;0.0
+D1;Le Vert de Maisons;Maisons Alfort Alfortville;0.0
+D1;Le Vert de Maisons;Villeneuve Pairie;0.0
+D1;Villeneuve Pairie;Le Vert de Maisons;0.0
+D1;Villeneuve Pairie;Villeneuve Triage;0.0
+D1;Villeneuve Triage;Villeneuve Pairie;0.0
+D1;Villeneuve Triage;Villeneuve St Georges;0.0
+D1;Villeneuve St Georges;Villeneuve Triage;0.0
+# D2
+D2;Melun;La Mee sur Seine;0.0
+D2;La Mee sur Seine;Melun;0.0
+D2;La Mee sur Seine;Cesson;0.0
+D2;Cesson;La Mee sur Seine;0.0
+D2;Cesson;Savigny le Temple Nandy;0.0
+D2;Savigny le Temple Nandy;Cesson;0.0
+D2;Savigny le Temple Nandy;Lieusaint Moissy;0.0
+D2;Lieusaint Moissy;Savigny le Temple Nandy;0.0
+D2;Lieusaint Moissy;Combs la Ville Quincy;0.0
+D2;Combs la Ville Quincy;Lieusaint Moissy;0.0
+D2;Combs la Ville Quincy;Boussy St Antoine;0.0
+D2;Boussy St Antoine;Combs la Ville Quincy;0.0
+D2;Boussy St Antoine;Brunoy;0.0
+D2;Brunoy;Boussy St Antoine;0.0
+D2;Brunoy;Yerres;0.0
+D2;Yerres;Brunoy;0.0
+D2;Yerres;Montgeron Crosne;0.0
+D2;Montgeron Crosne;Yerres;0.0
+D2;Montgeron Crosne;Villeneuve St Georges;0.0
+D2;Villeneuve St Georges;Montgeron Crosne;0.0
+# D4
+D4;Malesherbes (Loiret);Boigneville;0.0
+D4;Boigneville;Malesherbes (Loiret);0.0
+D4;Boigneville;Buno Gironville;0.0
+D4;Buno Gironville;Boigneville;0.0
+D4;Buno Gironville;Maisse;0.0
+D4;Maisse;Buno Gironville;0.0
+D4;Maisse;Boutigny;0.0
+D4;Boutigny;Maisse;0.0
+D4;Boutigny;La ferte Alais;0.0
+D4;La ferte Alais;Boutigny;0.0
+D4;La ferte Alais;Ballancourt;0.0
+D4;Ballancourt;La ferte Alais;0.0
+D4;Ballancourt;Mennecy;0.0
+D4;Mennecy;Ballancourt;0.0
+D4;Mennecy;Moulin Galant;0.0
+D4;Moulin Galant;Mennecy;0.0
+D4;Moulin Galant;Corbeil Essonnes;0.0
+D4;Corbeil Essonnes;Moulin Galant;0.0
+D4;Corbeil Essonnes;Le Bras de Fer;0.0
+D4;Le Bras de Fer;Corbeil Essonnes;0.0
+D4;Le Bras de Fer;Evry Courcouronnnnes;0.0
+D4;Evry Courcouronnnnes;Le Bras de Fer;0.0
+D4;Evry Courcouronnnnes;Orangis Bois de l'Epine;0.0
+D4;Orangis Bois de l'Epine;Evry Courcouronnnnes;0.0
+D4;Orangis Bois de l'Epine;Grigny Centre;0.0
+D4;Grigny Centre;Orangis Bois de l'Epine;0.0
+D4;Grigny Centre;Viry Chatillon;0.0
+D4;Viry Chatillon;Grigny Centre;0.0
+D4;Viry Chatillon;Juvisy sur Orge;0.0
+D4;Juvisy sur Orge;Viry Chatillon;0.0
+D4;Juvisy sur Orge;Vigneux sur Seine;0.0
+D4;Vigneux sur Seine;Juvisy sur Orge;0.0
+D4;Vigneux sur Seine;Villeneuve St Georges;0.0
+D4;Villeneuve St Georges;Vigneux sur Seine;0.0
+#D4Manque la branche Corbeille-Melun
+#D6
+D6;Corbeil Essonnes;Evry;0.0
+D6;Evry;Corbeil Essonnes;0.0
+D6;Evry;Grand Bourg;0.0
+D6;Grand Bourg;Evry;0.0
+D6;Grand Bourg;Ris Orangis;0.0
+D6;Ris Orangis;Grand Bourg;0.0
+D6;Ris Orangis;Viry Chatillon;0.0
+D6;Viry Chatillon;Ris Orangis;0.0
+# E1
+E1;Haussmann St Lazare;Magenta;0.0
+E1;Magenta;Haussmann St Lazare;0.0
+E1;Magenta;Pantin;0.0
+E1;Pantin;Magenta;0.0
+E1;Pantin;Noisy le Sec;0.0
+E1;Noisy le Sec;Pantin;0.0
+# P Haussmann St Lazare
+P;Haussmann St Lazare;Saint Lazare;0.0
+P;Saint Lazare;Haussmann St Lazare;0.0
+P;Haussmann St Lazare;Havre Caumartin;0.0
+P;Havre Caumartin;Haussmann St Lazare;0.0
+P;Haussmann St Lazare;Saint Augustin;0.0
+P;Saint Augustin;Haussmann St Lazare;0.0
+P;Haussmann St Lazare;Opera;0.0
+P;Opera;Haussmann St Lazare;0.0
+# E2
+E2;Chelles Gournay;Le Chenay Gagny;0.0
+E2;Le Chenay Gagny;Chelles Gournay;0.0
+E2;Le Chenay Gagny;Gagny;0.0
+E2;Gagny;Le Chenay Gagny;0.0
+E2;Gagny;Le Raincy Villemomble Montfermeil;0.0
+E2;Le Raincy Villemomble Montfermeil;Gagny;0.0
+E2;Le Raincy Villemomble Montfermeil;Bondy;0.0
+E2;Bondy;Le Raincy Villemomble Montfermeil;0.0
+E2;Bondy;Noisy le Sec;0.0
+E2;Noisy le Sec;Bondy;0.0
+# E4
+E4;Tournan;Gretz Armainvilliers;0.0
+E4;Gretz Armainvilliers;Tournan;0.0
+E4;Gretz Armainvilliers;Ozoir la Ferriere;0.0
+E4;Ozoir la Ferriere;Gretz Armainvilliers;0.0
+E4;Ozoir la Ferriere;Roissy en Brie;0.0
+E4;Roissy en Brie;Ozoir la Ferriere;0.0
+E4;Roissy en Brie;Emerainville Pontault Combault;0.0
+E4;Emerainville Pontault Combault;Roissy en Brie;0.0
+E4;Emerainville Pontault Combault;Les Yvris Noisy le Grand;0.0
+E4;Les Yvris Noisy le Grand;Emerainville Pontault Combault;0.0
+E4;Les Yvris Noisy le Grand;Villiers sur Marne le Plessis Trevise;0.0
+E4;Villiers sur Marne le Plessis Trevise;Les Yvris Noisy le Grand;0.0
+E4;Villiers sur Marne le Plessis Trevise;Les Boullereaux Champigny;0.0
+E4;Les Boullereaux Champigny;Villiers sur Marne le Plessis Trevise;0.0
+E4;Les Boullereaux Champigny;Nogent Le Perreux;0.0
+E4;Nogent Le Perreux;Les Boullereaux Champigny;0.0
+E4;Nogent Le Perreux;Val de Fontenay;0.0
+E4;Val de Fontenay;Nogent Le Perreux;0.0
+E4;Val de Fontenay;Rosny sous Bois;0.0
+E4;Rosny sous Bois;Val de Fontenay;0.0
+E4;Rosny sous Bois;Rosny Bois Perrier;0.0
+E4;Rosny Bois Perrier;Rosny sous Bois;0.0
+E4;Rosny Bois Perrier;Noisy le Sec;0.0
+E4;Noisy le Sec;Rosny Bois Perrier;0.0
+# M1
+M1;La Defense;Esplanade de La Defense;0.0
+M1;Esplanade de La Defense;La Defense;0.0
+M1;Esplanade de La Defense;Pont de Neuilly;0.0
+M1;Pont de Neuilly;Esplanade de La Defense;0.0
+M1;Pont de Neuilly;Les Sablons;0.0
+M1;Les Sablons;Pont de Neuilly;0.0
+M1;Les Sablons;Porte Maillot;0.0
+M1;Porte Maillot;Les Sablons;0.0
+M1;Porte Maillot;Argentine;0.0
+M1;Argentine;Porte Maillot;0.0
+M1;Argentine;Charles de Gaulle Etoile;0.0
+M1;Charles de Gaulle Etoile;Argentine;0.0
+M1;Charles de Gaulle Etoile;George V;0.0
+M1;George V;Charles de Gaulle Etoile;0.0
+M1;George V;Franklin Roosevelt;0.0
+M1;Franklin Roosevelt;George V;0.0
+M1;Franklin Roosevelt;Champs Elysees Clemenceau;0.0
+M1;Champs Elysees Clemenceau;Franklin Roosevelt;0.0
+M1;Champs Elysees Clemenceau;Concorde;0.0
+M1;Concorde;Champs Elysees Clemenceau;0.0
+M1;Concorde;Tuileries;0.0
+M1;Tuileries;Concorde;0.0
+M1;Tuileries;Palais Royal Musee du Louvre;0.0
+M1;Palais Royal Musee du Louvre;Tuileries;0.0
+M1;Palais Royal Musee du Louvre;Louvre Rivoli;0.0
+M1;Louvre Rivoli;Palais Royal Musee du Louvre;0.0
+M1;Louvre Rivoli;Chatelet;0.0
+M1;Chatelet;Louvre Rivoli;0.0
+M1;Chatelet;Hotel de Ville;0.0
+M1;Hotel de Ville;Chatelet;0.0
+M1;Hotel de Ville;St Paul;0.0
+M1;St Paul;Hotel de Ville;0.0
+M1;St Paul;Bastille;0.0
+M1;Bastille;St Paul;0.0
+M1;Bastille;Gare de Lyon;0.0
+M1;Gare de Lyon;Bastille;0.0
+M1;Gare de Lyon;Reullly Diderot;0.0
+M1;Reullly Diderot;Gare de Lyon;0.0
+M1;Reullly Diderot;Nation;0.0
+M1;Nation;Reullly Diderot;0.0
+M1;Nation;Porte de Vincennes;0.0
+M1;Porte de Vincennes;Nation;0.0
+M1;Porte de Vincennes;Saint Mande;0.0
+M1;Saint Mande;Porte de Vincennes;0.0
+M1;Saint Mande;Berault;0.0
+M1;Berault;Saint Mande;0.0
+M1;Berault;Chateau de Vincennes;0.0
+M1;Chateau de Vincennes;Berault;0.0
+# M10
+M10;Boulogne Pont de St Cloud;Boulogne Jean Jaures;0.0
+M10;Boulogne Jean Jaures;Boulogne Pont de St Cloud;0.0
+M10;Boulogne Jean Jaures;Michel Ange Molitor;0.0
+M10;Michel Ange Molitor;Chardon Lagache;0.0
+M10;Chardon Lagache;Mirabeau;0.0
+M10;Mirabeau;Javel Andre Citroen;0.0
+M10;Javel Andre Citroen;Charles michels;0.0
+M10;Javel Andre Citroen;Eglise d'Auteuil;0.0
+M10;Eglise d'Auteuil;Michel Ange Auteuil;0.0
+M10;Michel Ange Auteuil;porte d'Auteuil;0.0
+M10;porte d'Auteuil;Boulogne Jean Jaures;0.0
+M10;Charles michels;Javel Andre Citroen;0.0
+M10;Charles michels;Avenue Emile Zola;0.0
+M10;Avenue Emile Zola;Charles michels;0.0
+M10;Avenue Emile Zola;La Motte Picquet Grenelle;0.0
+M10;La Motte Picquet Grenelle;Avenue Emile Zola;0.0
+M10;La Motte Picquet Grenelle;Segur;0.0
+M10;Segur;La Motte Picquet Grenelle;0.0
+M10;Segur;Duroc;0.0
+M10;Duroc;Segur;0.0
+M10;Duroc;Vaneau;0.0
+M10;Vaneau;Duroc;0.0
+M10;Vaneau;Sevres Babylone;0.0
+M10;Sevres Babylone;Vaneau;0.0
+M10;Sevres Babylone;Mabillon;0.0
+M10;Mabillon;Sevres Babylone;0.0
+M10;Mabillon;Odeon;0.0
+M10;Odeon;Mabillon;0.0
+M10;Odeon;Cluny.La Sorbonne;0.0
+M10;Cluny.La Sorbonne;Odeon;0.0
+M10;Cluny.La Sorbonne;Maubert Mutualite;0.0
+M10;Maubert Mutualite;Cluny.La Sorbonne;0.0
+M10;Maubert Mutualite;Cardinal Lemoine;0.0
+M10;Cardinal Lemoine;Maubert Mutualite;0.0
+M10;Cardinal Lemoine;Jussieu;0.0
+M10;Jussieu;Cardinal Lemoine;0.0
+M10;Jussieu;Gare d'Austerlitz;0.0
+M10;Gare d'Austerlitz;Jussieu;0.0
+M10;porte d'Auteuil;Michel Ange Auteuil;0.0
+M10;Michel Ange Auteuil;porte d'Auteuil;0.0
+M10;Michel Ange Auteuil;Eglise d'Auteuil;0.0
+M10;Eglise d'Auteuil;Michel Ange Auteuil;0.0
+# M11
+M11;Chatelet;Hotel de Ville;0.0
+M11;Hotel de Ville;Chatelet;0.0
+M11;Hotel de Ville;Rambuteau;0.0
+M11;Rambuteau;Hotel de Ville;0.0
+M11;Rambuteau;Arts et Metiers;0.0
+M11;Arts et Metiers;Rambuteau;0.0
+M11;Arts et Metiers;Republique;0.0
+M11;Republique;Arts et Metiers;0.0
+M11;Republique;Goncourt;0.0
+M11;Goncourt;Republique;0.0
+M11;Goncourt;Belleville;0.0
+M11;Belleville;Goncourt;0.0
+M11;Belleville;Pyrenees;0.0
+M11;Pyrenees;Belleville;0.0
+M11;Pyrenees;Jourdain;0.0
+M11;Jourdain;Pyrenees;0.0
+M11;Jourdain;Place des Fetes;0.0
+M11;Place des Fetes;Jourdain;0.0
+M11;Place des Fetes;Telegraphe;0.0
+M11;Telegraphe;Place des Fetes;0.0
+M11;Telegraphe;Porte des Lilas;0.0
+M11;Porte des Lilas;Telegraphe;0.0
+M11;Porte des Lilas;Mairie des Lilas;0.0
+M11;Mairie des Lilas;Porte des Lilas;0.0
+# M12
+M12;Porte de la Chapelle;Marx Dormoy;0.0
+M12;Marx Dormoy;Porte de la Chapelle;0.0
+M12;Marx Dormoy;Marcadet Poissonniers;0.0
+M12;Marcadet Poissonniers;Marx Dormoy;0.0
+M12;Marcadet Poissonniers;Jules Joffrin;0.0
+M12;Jules Joffrin;Marcadet Poissonniers;0.0
+M12;Jules Joffrin;Lamarck Caulaincourt;0.0
+M12;Lamarck Caulaincourt;Jules Joffrin;0.0
+M12;Lamarck Caulaincourt;Abbesses;0.0
+M12;Abbesses;Lamarck Caulaincourt;0.0
+M12;Abbesses;Pigalle;0.0
+M12;Pigalle;Abbesses;0.0
+M12;Pigalle;Saint Georges;0.0
+M12;Saint Georges;Pigalle;0.0
+M12;Saint Georges;Notre Dame de Lorette;0.0
+M12;Notre Dame de Lorette;Saint Georges;0.0
+M12;Notre Dame de Lorette;Trinite d4estienne d'Orves;0.0
+M12;Trinite d4estienne d'Orves;Notre Dame de Lorette;0.0
+M12;Trinite d4estienne d'Orves;Saint Lazare;0.0
+M12;Saint Lazare;Trinite d4estienne d'Orves;0.0
+M12;Saint Lazare;Madeleine;0.0
+M12;Madeleine;Saint Lazare;0.0
+M12;Madeleine;Concorde;0.0
+M12;Concorde;Madeleine;0.0
+M12;Concorde;Assemblee Nationale;0.0
+M12;Assemblee Nationale;Concorde;0.0
+M12;Assemblee Nationale;Solferino;0.0
+M12;Solferino;Assemblee Nationale;0.0
+M12;Solferino;Rue du Bac;0.0
+M12;Rue du Bac;Solferino;0.0
+M12;Rue du Bac;Sevres Babylone;0.0
+M12;Sevres Babylone;Rue du Bac;0.0
+M12;Sevres Babylone;Rennes;0.0
+M12;Rennes;Sevres Babylone;0.0
+M12;Rennes;Notre Dame des Champs;0.0
+M12;Notre Dame des Champs;Rennes;0.0
+M12;Notre Dame des Champs;Montparnasse Bienvenue;0.0
+M12;Montparnasse Bienvenue;Notre Dame des Champs;0.0
+M12;Montparnasse Bienvenue;Falguiere;0.0
+M12;Falguiere;Montparnasse Bienvenue;0.0
+M12;Falguiere;Pasteur;0.0
+M12;Pasteur;Falguiere;0.0
+M12;Pasteur;Volontaires;0.0
+M12;Volontaires;Pasteur;0.0
+M12;Volontaires;Vaugirard;0.0
+M12;Vaugirard;Volontaires;0.0
+M12;Vaugirard;Convention;0.0
+M12;Convention;Vaugirard;0.0
+M12;Convention;Porte de Versailles;0.0
+M12;Porte de Versailles;Convention;0.0
+M12;Porte de Versailles;Corentin Celton;0.0
+M12;Corentin Celton;Porte de Versailles;0.0
+M12;Corentin Celton;Mairie d'Issy;0.0
+M12;Mairie d'Issy;Corentin Celton;0.0
+# M13
+M13;Saint Denis Universite;Basilique St Denis;0.0
+M13;Basilique St Denis;Saint Denis Universite;0.0
+M13;Basilique St Denis;Saint Denis Porte de Paris;0.0
+M13;Saint Denis Porte de Paris;Basilique St Denis;0.0
+M13;Saint Denis Porte de Paris;Carrefour Pleyel;0.0
+M13;Carrefour Pleyel;Saint Denis Porte de Paris;0.0
+M13;Carrefour Pleyel;Mairie de St Ouen;0.0
+M13;Mairie de St Ouen;Carrefour Pleyel;0.0
+M13;Mairie de St Ouen;Garibaldi;0.0
+M13;Garibaldi;Mairie de St Ouen;0.0
+M13;Garibaldi;Porte de St Ouen;0.0
+M13;Porte de St Ouen;Garibaldi;0.0
+M13;Porte de St Ouen;Guy Moquet;0.0
+M13;Guy Moquet;Porte de St Ouen;0.0
+M13;Guy Moquet;La Fourche;0.0
+M13;La Fourche;Guy Moquet;0.0
+M13;La Fourche;Brochant;0.0
+M13;Brochant;La Fourche;0.0
+M13;La Fourche;Place de Clichy;0.0
+M13;Place de Clichy;La Fourche;0.0
+M13;Place de Clichy;Liege;0.0
+M13;Liege;Place de Clichy;0.0
+M13;Liege;Saint Lazare;0.0
+M13;Saint Lazare;Liege;0.0
+M13;Saint Lazare;Miromesnil;0.0
+M13;Miromesnil;Saint Lazare;0.0
+M13;Miromesnil;Champs Elysees Clemenceau;0.0
+M13;Champs Elysees Clemenceau;Miromesnil;0.0
+M13;Champs Elysees Clemenceau;Invalides;0.0
+M13;Invalides;Champs Elysees Clemenceau;0.0
+M13;Invalides;Varenne;0.0
+M13;Varenne;Invalides;0.0
+M13;Varenne;St Francois Xavier;0.0
+M13;St Francois Xavier;Varenne;0.0
+M13;St Francois Xavier;Duroc;0.0
+M13;Duroc;St Francois Xavier;0.0
+M13;Duroc;Montparnasse Bienvenue;0.0
+M13;Montparnasse Bienvenue;Duroc;0.0
+M13;Montparnasse Bienvenue;Gaite;0.0
+M13;Gaite;Montparnasse Bienvenue;0.0
+M13;Gaite;Permety;0.0
+M13;Permety;Gaite;0.0
+M13;Permety;Plaisance;0.0
+M13;Plaisance;Permety;0.0
+M13;Plaisance;Porte de Vanves;0.0
+M13;Porte de Vanves;Plaisance;0.0
+M13;Porte de Vanves;Malakoff Plateau de Vanves;0.0
+M13;Malakoff Plateau de Vanves;Porte de Vanves;0.0
+M13;Malakoff Plateau de Vanves;Malakoff Rue Etienne Dolet;0.0
+M13;Malakoff Rue Etienne Dolet;Malakoff Plateau de Vanves;0.0
+M13;Malakoff Rue Etienne Dolet;Chatillon Montrouge;0.0
+M13;Chatillon Montrouge;Malakoff Rue Etienne Dolet;0.0
+M13;Asnieres Gennevilliers Les Courtilles;Les Agnettes;0.0
+M13;Les Agnettes;Asnieres Gennevilliers Les Courtilles;0.0
+M13;Les Agnettes;Gabriel Peri;0.0
+M13;Gabriel Peri;Les Agnettes;0.0
+M13;Gabriel Peri;Mairie de Clichy;0.0
+M13;Mairie de Clichy;Gabriel Peri;0.0
+M13;Mairie de Clichy;Porte de Clichy;0.0
+M13;Porte de Clichy;Mairie de Clichy;0.0
+M13;Porte de Clichy;Brochant;0.0
+M13;Brochant;Porte de Clichy;0.0
+# M14
+M14;Saint Lazare;Madeleine;0.0
+M14;Madeleine;Saint Lazare;0.0
+M14;Madeleine;Pyramides;0.0
+M14;Pyramides;Madeleine;0.0
+M14;Pyramides;Chatelet;0.0
+M14;Chatelet;Pyramides;0.0
+M14;Chatelet;Gare de Lyon;0.0
+M14;Gare de Lyon;Chatelet;0.0
+M14;Gare de Lyon;Bercy;0.0
+M14;Bercy;Gare de Lyon;0.0
+M14;Bercy;Cour Saint Emillion;0.0
+M14;Cour Saint Emillion;Bercy;0.0
+M14;Cour Saint Emillion;Bibliotheque Francois Mitterrand;0.0
+M14;Bibliotheque Francois Mitterrand;Cour Saint Emillion;0.0
+M14;Bibliotheque Francois Mitterrand;Olympiades;0.0
+M14;Olympiades;Bibliotheque Francois Mitterrand;0.0
+# M2
+M2;Porte Dauphine;Victor Hugo;0.0
+M2;Victor Hugo;Porte Dauphine;0.0
+M2;Victor Hugo;Charles de Gaulle Etoile;0.0
+M2;Charles de Gaulle Etoile;Victor Hugo;0.0
+M2;Charles de Gaulle Etoile;Termes;0.0
+M2;Termes;Charles de Gaulle Etoile;0.0
+M2;Termes;Courcelles;0.0
+M2;Courcelles;Termes;0.0
+M2;Courcelles;Monceau;0.0
+M2;Monceau;Courcelles;0.0
+M2;Monceau;Villiers;0.0
+M2;Villiers;Monceau;0.0
+M2;Villiers;Rome;0.0
+M2;Rome;Villiers;0.0
+M2;Rome;Place de Clichy;0.0
+M2;Place de Clichy;Rome;0.0
+M2;Place de Clichy;Blanche;0.0
+M2;Blanche;Place de Clichy;0.0
+M2;Blanche;Pigalle;0.0
+M2;Pigalle;Blanche;0.0
+M2;Pigalle;Anvers;0.0
+M2;Anvers;Pigalle;0.0
+M2;Anvers;Barbes Rochechouart;0.0
+M2;Barbes Rochechouart;Anvers;0.0
+M2;Barbes Rochechouart;La Chapelle;0.0
+M2;La Chapelle;Barbes Rochechouart;0.0
+M2;La Chapelle;Stalingrad;0.0
+M2;Stalingrad;La Chapelle;0.0
+M2;Stalingrad;Jaures;0.0
+M2;Jaures;Stalingrad;0.0
+M2;Jaures;Colonnel Fabien;0.0
+M2;Colonnel Fabien;Jaures;0.0
+M2;Colonnel Fabien;Belleville;0.0
+M2;Belleville;Colonnel Fabien;0.0
+M2;Belleville;Coucouronnes;0.0
+M2;Coucouronnes;Belleville;0.0
+M2;Coucouronnes;Melilmontant;0.0
+M2;Melilmontant;Coucouronnes;0.0
+M2;Melilmontant;Pere Lachaise;0.0
+M2;Pere Lachaise;Melilmontant;0.0
+M2;Pere Lachaise;Philippe Auguste;0.0
+M2;Philippe Auguste;Pere Lachaise;0.0
+M2;Philippe Auguste;Alexandre Dumas;0.0
+M2;Alexandre Dumas;Philippe Auguste;0.0
+M2;Alexandre Dumas;Avron;0.0
+M2;Avron;Alexandre Dumas;0.0
+M2;Avron;Nation;0.0
+M2;Nation;Avron;0.0
+# M3
+M3;Pont de Levallois Becon;Anatole France;0.0
+M3;Anatole France;Pont de Levallois Becon;0.0
+M3;Anatole France;Louise Michel;0.0
+M3;Louise Michel;Anatole France;0.0
+M3;Louise Michel;Porte de Champerret;0.0
+M3;Porte de Champerret;Louise Michel;0.0
+M3;Porte de Champerret;Pereire;0.0
+M3;Pereire;Porte de Champerret;0.0
+M3;Pereire;Wagram;0.0
+M3;Wagram;Pereire;0.0
+M3;Wagram;Malesherbes;0.0
+M3;Malesherbes;Wagram;0.0
+M3;Malesherbes;Villiers;0.0
+M3;Villiers;Malesherbes;0.0
+M3;Villiers;Europe;0.0
+M3;Europe;Villiers;0.0
+M3;Europe;Saint Lazare;0.0
+M3;Saint Lazare;Europe;0.0
+M3;Saint Lazare;Havre Caumartin;0.0
+M3;Havre Caumartin;Saint Lazare;0.0
+M3;Havre Caumartin;Opera;0.0
+M3;Opera;Havre Caumartin;0.0
+M3;Opera;Quatre Septembre;0.0
+M3;Quatre Septembre;Opera;0.0
+M3;Quatre Septembre;Bourse;0.0
+M3;Bourse;Quatre Septembre;0.0
+M3;Bourse;Sentier;0.0
+M3;Sentier;Bourse;0.0
+M3;Sentier;Reaumur Sebastopol;0.0
+M3;Reaumur Sebastopol;Sentier;0.0
+M3;Reaumur Sebastopol;Arts et Metiers;0.0
+M3;Arts et Metiers;Reaumur Sebastopol;0.0
+M3;Arts et Metiers;Temple;0.0
+M3;Temple;Arts et Metiers;0.0
+M3;Temple;Republique;0.0
+M3;Republique;Temple;0.0
+M3;Republique;Rue Saint Maur;0.0
+M3;Rue Saint Maur;Republique;0.0
+M3;Rue Saint Maur;Pere Lachaise;0.0
+M3;Pere Lachaise;Rue Saint Maur;0.0
+M3;Pere Lachaise;Gambetta;0.0
+M3;Gambetta;Pere Lachaise;0.0
+M3;Gambetta;Porte de Bagnolet;0.0
+M3;Porte de Bagnolet;Gambetta;0.0
+M3;Porte de Bagnolet;Gallieni;0.0
+M3;Gallieni;Porte de Bagnolet;0.0
+# M3 bis
+M3 bis;Porte des Lilas;Saint Fargeau;0.0
+M3 bis;Saint Fargeau;Porte des Lilas;0.0
+M3 bis;Saint Fargeau;Pelleport;0.0
+M3 bis;Pelleport;Saint Fargeau;0.0
+M3 bis;Pelleport;Gambetta;0.0
+M3 bis;Gambetta;Pelleport;0.0
+# M4
+M4;Porte de Clignancourt;Simplon;0.0
+M4;Simplon;Porte de Clignancourt;0.0
+M4;Simplon;Marcadet Poissonniers;0.0
+M4;Marcadet Poissonniers;Simplon;0.0
+M4;Marcadet Poissonniers;Chateau Rouge;0.0
+M4;Chateau Rouge;Marcadet Poissonniers;0.0
+M4;Chateau Rouge;Barbes Rochechouart;0.0
+M4;Barbes Rochechouart;Chateau Rouge;0.0
+M4;Barbes Rochechouart;Gare du Nord;0.0
+M4;Gare du Nord;Barbes Rochechouart;0.0
+M4;Gare du Nord;Gare de l'Est;0.0
+M4;Gare de l'Est;Gare du Nord;0.0
+M4;Gare de l'Est;Chateau d'Eau;0.0
+M4;Chateau d'Eau;Gare de l'Est;0.0
+M4;Chateau d'Eau;Strasbourg St Denis;0.0
+M4;Strasbourg St Denis;Chateau d'Eau;0.0
+M4;Strasbourg St Denis;Reaumur Sebastopol;0.0
+M4;Reaumur Sebastopol;Strasbourg St Denis;0.0
+M4;Reaumur Sebastopol;Etienne Marcel;0.0
+M4;Etienne Marcel;Reaumur Sebastopol;0.0
+M4;Etienne Marcel;Les Halles;0.0
+M4;Les Halles;Etienne Marcel;0.0
+M4;Les Halles;Chatelet;0.0
+M4;Chatelet;Les Halles;0.0
+M4;Chatelet;Cite;0.0
+M4;Cite;Chatelet;0.0
+M4;Cite;Saint Michel;0.0
+M4;Saint Michel;Cite;0.0
+M4;Saint Michel;Odeon;0.0
+M4;Odeon;Saint Michel;0.0
+M4;Odeon;St Germain des Pres;0.0
+M4;St Germain des Pres;Odeon;0.0
+M4;St Germain des Pres;St Sulpice;0.0
+M4;St Sulpice;St Germain des Pres;0.0
+M4;St Sulpice;Sainte Placide;0.0
+M4;Sainte Placide;St Sulpice;0.0
+M4;Sainte Placide;Montparnasse Bienvenue;0.0
+M4;Montparnasse Bienvenue;Sainte Placide;0.0
+M4;Montparnasse Bienvenue;Vavin;0.0
+M4;Vavin;Montparnasse Bienvenue;0.0
+M4;Vavin;Raspail;0.0
+M4;Raspail;Vavin;0.0
+M4;Raspail;Denfert Rochereau;0.0
+M4;Denfert Rochereau;Raspail;0.0
+M4;Denfert Rochereau;Mouton Duvernet;0.0
+M4;Mouton Duvernet;Denfert Rochereau;0.0
+M4;Mouton Duvernet;Alesia;0.0
+M4;Alesia;Mouton Duvernet;0.0
+M4;Alesia;Porte d'Orleans;0.0
+M4;Porte d'Orleans;Alesia;0.0
+# M5
+M5;Bobigny Pablo Picasso;Bobigny Pantin Raymond Queneau;0.0
+M5;Bobigny Pantin Raymond Queneau;Bobigny Pablo Picasso;0.0
+M5;Bobigny Pantin Raymond Queneau;Eglise de Pantin;0.0
+M5;Eglise de Pantin;Bobigny Pantin Raymond Queneau;0.0
+M5;Eglise de Pantin;Hoche;0.0
+M5;Hoche;Eglise de Pantin;0.0
+M5;Hoche;Porte de Pantin;0.0
+M5;Porte de Pantin;Hoche;0.0
+M5;Porte de Pantin;Ourcq;0.0
+M5;Ourcq;Porte de Pantin;0.0
+M5;Ourcq;Laumiere;0.0
+M5;Laumiere;Ourcq;0.0
+M5;Laumiere;Jaures;0.0
+M5;Jaures;Laumiere;0.0
+M5;Jaures;Stalingrad;0.0
+M5;Stalingrad;Jaures;0.0
+M5;Stalingrad;Gare du Nord;0.0
+M5;Gare du Nord;Stalingrad;0.0
+M5;Gare du Nord;Gare de l'Est;0.0
+M5;Gare de l'Est;Gare du Nord;0.0
+M5;Gare de l'Est;Jacques Bonsergent;0.0
+M5;Jacques Bonsergent;Gare de l'Est;0.0
+M5;Jacques Bonsergent;Republique;0.0
+M5;Republique;Jacques Bonsergent;0.0
+M5;Republique;Oberkampf;0.0
+M5;Oberkampf;Republique;0.0
+M5;Oberkampf;Richard Lenoir;0.0
+M5;Richard Lenoir;Oberkampf;0.0
+M5;Richard Lenoir;Breguet Sabin;0.0
+M5;Breguet Sabin;Richard Lenoir;0.0
+M5;Breguet Sabin;Bastille;0.0
+M5;Bastille;Breguet Sabin;0.0
+M5;Bastille;Quai de la Rapee;0.0
+M5;Quai de la Rapee;Bastille;0.0
+M5;Quai de la Rapee;Gare d'Austerlitz;0.0
+M5;Gare d'Austerlitz;Quai de la Rapee;0.0
+M5;Gare d'Austerlitz;Saint Marcel;0.0
+M5;Saint Marcel;Gare d'Austerlitz;0.0
+M5;Saint Marcel;Campo Formio;0.0
+M5;Campo Formio;Saint Marcel;0.0
+M5;Campo Formio;Place d'Italie;0.0
+M5;Place d'Italie;Campo Formio;0.0
+# M6
+M6;Charles de Gaulle Etoile;Kleber;0.0
+M6;Kleber;Charles de Gaulle Etoile;0.0
+M6;Kleber;Boissiere;0.0
+M6;Boissiere;Kleber;0.0
+M6;Boissiere;Trocadero;0.0
+M6;Trocadero;Boissiere;0.0
+M6;Trocadero;Passy;0.0
+M6;Passy;Trocadero;0.0
+M6;Passy;Bir Hakeim;0.0
+M6;Bir Hakeim;Passy;0.0
+M6;Bir Hakeim;Dupleix;0.0
+M6;Dupleix;Bir Hakeim;0.0
+M6;Dupleix;La Motte Picquet Grenelle;0.0
+M6;La Motte Picquet Grenelle;Dupleix;0.0
+M6;La Motte Picquet Grenelle;Cambrone;0.0
+M6;Cambrone;La Motte Picquet Grenelle;0.0
+M6;Cambrone;Sevres Lecourbe;0.0
+M6;Sevres Lecourbe;Cambrone;0.0
+M6;Sevres Lecourbe;Pasteur;0.0
+M6;Pasteur;Sevres Lecourbe;0.0
+M6;Pasteur;Montparnasse Bienvenue;0.0
+M6;Montparnasse Bienvenue;Pasteur;0.0
+M6;Montparnasse Bienvenue;Edgar Quinet;0.0
+M6;Edgar Quinet;Montparnasse Bienvenue;0.0
+M6;Edgar Quinet;Raspail;0.0
+M6;Raspail;Edgar Quinet;0.0
+M6;Raspail;Denfert Rochereau;0.0
+M6;Denfert Rochereau;Raspail;0.0
+M6;Denfert Rochereau;Saint Jacques;0.0
+M6;Saint Jacques;Denfert Rochereau;0.0
+M6;Saint Jacques;Classiere;0.0
+M6;Classiere;Saint Jacques;0.0
+M6;Classiere;Corvisart;0.0
+M6;Corvisart;Classiere;0.0
+M6;Corvisart;Place d'Italie;0.0
+M6;Place d'Italie;Corvisart;0.0
+M6;Place d'Italie;Nationale;0.0
+M6;Nationale;Place d'Italie;0.0
+M6;Nationale;Chevaleret;0.0
+M6;Chevaleret;Nationale;0.0
+M6;Chevaleret;Quai de la Gare;0.0
+M6;Quai de la Gare;Chevaleret;0.0
+M6;Quai de la Gare;Bercy;0.0
+M6;Bercy;Quai de la Gare;0.0
+M6;Bercy;Dugommier;0.0
+M6;Dugommier;Bercy;0.0
+M6;Dugommier;Daumesnil;0.0
+M6;Daumesnil;Dugommier;0.0
+M6;Daumesnil;Bel Air;0.0
+M6;Bel Air;Daumesnil;0.0
+M6;Bel Air;Picpus;0.0
+M6;Picpus;Bel Air;0.0
+M6;Picpus;Nation;0.0
+M6;Nation;Picpus;0.0
+# M7
+M7;La Courneuve 8 Mai 1945;Fort d'Aubervilliers;0.0
+M7;Fort d'Aubervilliers;La Courneuve 8 Mai 1945;0.0
+M7;Fort d'Aubervilliers;Aubervilliers Pantin Quatre chemins;0.0
+M7;Aubervilliers Pantin Quatre chemins;Fort d'Aubervilliers;0.0
+M7;Aubervilliers Pantin Quatre chemins;Porte de la Vilette;0.0
+M7;Porte de la Vilette;Aubervilliers Pantin Quatre chemins;0.0
+M7;Porte de la Vilette;Corentin Cariou;0.0
+M7;Corentin Cariou;Porte de la Vilette;0.0
+M7;Corentin Cariou;Crimee;0.0
+M7;Crimee;Corentin Cariou;0.0
+M7;Crimee;Riquet;0.0
+M7;Riquet;Crimee;0.0
+M7;Riquet;Stalingrad;0.0
+M7;Stalingrad;Riquet;0.0
+M7;Stalingrad;Louis Blanc;0.0
+M7;Louis Blanc;Stalingrad;0.0
+M7;Louis Blanc;Chateau Landon;0.0
+M7;Chateau Landon;Louis Blanc;0.0
+M7;Chateau Landon;Gare de l'Est;0.0
+M7;Gare de l'Est;Chateau Landon;0.0
+M7;Gare de l'Est;Poissonniere;0.0
+M7;Poissonniere;Gare de l'Est;0.0
+M7;Poissonniere;Cadet;0.0
+M7;Cadet;Poissonniere;0.0
+M7;Cadet;Le Peletier;0.0
+M7;Le Peletier;Cadet;0.0
+M7;Le Peletier;Chaussee d'Antin La Fayette;0.0
+M7;Chaussee d'Antin La Fayette;Le Peletier;0.0
+M7;Chaussee d'Antin La Fayette;Opera;0.0
+M7;Opera;Chaussee d'Antin La Fayette;0.0
+M7;Opera;Pyramides;0.0
+M7;Pyramides;Opera;0.0
+M7;Pyramides;Palais Royal Musee du Louvre;0.0
+M7;Palais Royal Musee du Louvre;Pyramides;0.0
+M7;Palais Royal Musee du Louvre;Pont Neuf;0.0
+M7;Pont Neuf;Palais Royal Musee du Louvre;0.0
+M7;Pont Neuf;Chatelet;0.0
+M7;Chatelet;Pont Neuf;0.0
+M7;Chatelet;Pont Marie;0.0
+M7;Pont Marie;Chatelet;0.0
+M7;Pont Marie;Sully Morland;0.0
+M7;Sully Morland;Pont Marie;0.0
+M7;Sully Morland;Jussieu;0.0
+M7;Jussieu;Sully Morland;0.0
+M7;Jussieu;Place Monge;0.0
+M7;Place Monge;Jussieu;0.0
+M7;Place Monge;Censier Daubenton;0.0
+M7;Censier Daubenton;Place Monge;0.0
+M7;Censier Daubenton;Les Gobelins;0.0
+M7;Les Gobelins;Censier Daubenton;0.0
+M7;Les Gobelins;Place d'Italie;0.0
+M7;Place d'Italie;Les Gobelins;0.0
+M7;Place d'Italie;Tolbiac;0.0
+M7;Tolbiac;Place d'Italie;0.0
+M7;Tolbiac;Maison Blanche;0.0
+M7;Maison Blanche;Tolbiac;0.0
+M7;Maison Blanche;Porte d'Italie;0.0
+M7;Porte d'Italie;Maison Blanche;0.0
+M7;Porte d'Italie;Porte de Choisy;0.0
+M7;Porte de Choisy;Porte d'Italie;0.0
+M7;Porte de Choisy;Porte d'Ivry;0.0
+M7;Porte d'Ivry;Porte de Choisy;0.0
+M7;Porte d'Ivry;Pierre Curie;0.0
+M7;Pierre Curie;Porte d'Ivry;0.0
+M7;Pierre Curie;Mairie d'Ivry;0.0
+M7;Mairie d'Ivry;Pierre Curie;0.0
+M7;Maison Blanche;Le Kremlin Bicetre;0.0
+M7;Le Kremlin Bicetre;Maison Blanche;0.0
+M7;Le Kremlin Bicetre;Villejuif Leo Lagrange;0.0
+M7;Villejuif Leo Lagrange;Le Kremlin Bicetre;0.0
+M7;Villejuif Leo Lagrange;Villejuif Paul Vaillant Couturier;0.0
+M7;Villejuif Paul Vaillant Couturier;Villejuif Leo Lagrange;0.0
+M7;Villejuif Paul Vaillant Couturier;Villejuif Louis Aragon;0.0
+M7;Villejuif Louis Aragon;Villejuif Paul Vaillant Couturier;0.0
+# M7 bis
+M7 bis;Louis Blanc;Jaures;0.0
+M7 bis;Jaures;Louis Blanc;0.0
+M7 bis;Jaures;Bolivar;0.0
+M7 bis;Bolivar;Jaures;0.0
+M7 bis;Bolivar;Buttes Chaumont;0.0
+M7 bis;Buttes Chaumont;Bolivar;0.0
+M7 bis;Buttes Chaumont;Botzaris;0.0
+M7 bis;Botzaris;Buttes Chaumont;0.0
+M7 bis;Botzaris;Place des Fetes;0.0
+M7 bis;Place des Fetes;Pre St Gervais;0.0
+M7 bis;Pre St Gervais;Danube;0.0
+M7 bis;Danube;Botzaris;0.0
+# M8
+M8;Balard;Lourmel;0.0
+M8;Lourmel;Balard;0.0
+M8;Lourmel;Bourcicaut;0.0
+M8;Bourcicaut;Lourmel;0.0
+M8;Bourcicaut;Felix Faure;0.0
+M8;Felix Faure;Bourcicaut;0.0
+M8;Felix Faure;Commerce;0.0
+M8;Commerce;Felix Faure;0.0
+M8;Commerce;La Motte Picquet Grenelle;0.0
+M8;La Motte Picquet Grenelle;Commerce;0.0
+M8;La Motte Picquet Grenelle;Ecole Militaire;0.0
+M8;Ecole Militaire;La Motte Picquet Grenelle;0.0
+M8;Ecole Militaire;La Tour Maubourg;0.0
+M8;La Tour Maubourg;Ecole Militaire;0.0
+M8;La Tour Maubourg;Invalides;0.0
+M8;Invalides;La Tour Maubourg;0.0
+M8;Invalides;Concorde;0.0
+M8;Concorde;Invalides;0.0
+M8;Concorde;Madeleine;0.0
+M8;Madeleine;Concorde;0.0
+M8;Madeleine;Opera;0.0
+M8;Opera;Madeleine;0.0
+M8;Opera;Richelieu Drouot;0.0
+M8;Richelieu Drouot;Opera;0.0
+M8;Richelieu Drouot;Grands Boulevards;0.0
+M8;Grands Boulevards;Richelieu Drouot;0.0
+M8;Grands Boulevards;Bonne Nouvelle;0.0
+M8;Bonne Nouvelle;Grands Boulevards;0.0
+M8;Bonne Nouvelle;Strasbourg St Denis;0.0
+M8;Strasbourg St Denis;Bonne Nouvelle;0.0
+M8;Strasbourg St Denis;Republique;0.0
+M8;Republique;Strasbourg St Denis;0.0
+M8;Republique;Filles du Calvaire;0.0
+M8;Filles du Calvaire;Republique;0.0
+M8;Filles du Calvaire;Saint Sebastien Froissart;0.0
+M8;Saint Sebastien Froissart;Filles du Calvaire;0.0
+M8;Saint Sebastien Froissart;Chemin vert;0.0
+M8;Chemin vert;Saint Sebastien Froissart;0.0
+M8;Chemin vert;Bastille;0.0
+M8;Bastille;Chemin vert;0.0
+M8;Bastille;Ledru Rollin;0.0
+M8;Ledru Rollin;Bastille;0.0
+M8;Ledru Rollin;Faidherbe Chaligny;0.0
+M8;Faidherbe Chaligny;Ledru Rollin;0.0
+M8;Faidherbe Chaligny;Reuilly Diderot;0.0
+M8;Reuilly Diderot;Faidherbe Chaligny;0.0
+M8;Reuilly Diderot;Montgallet;0.0
+M8;Montgallet;Reuilly Diderot;0.0
+M8;Montgallet;Daumesnil;0.0
+M8;Daumesnil;Montgallet;0.0
+M8;Daumesnil;Michel Bizot;0.0
+M8;Michel Bizot;Daumesnil;0.0
+M8;Michel Bizot;Porte Doree;0.0
+M8;Porte Doree;Michel Bizot;0.0
+M8;Porte Doree;Porte de Charenton;0.0
+M8;Porte de Charenton;Porte Doree;0.0
+M8;Porte de Charenton;Liberte;0.0
+M8;Liberte;Porte de Charenton;0.0
+M8;Liberte;Charenton Ecoles;0.0
+M8;Charenton Ecoles;Liberte;0.0
+M8;Charenton Ecoles;Ecole Veterinaire Maisons Alfort;0.0
+M8;Ecole Veterinaire Maisons Alfort;Charenton Ecoles;0.0
+M8;Ecole Veterinaire Maisons Alfort;Maisons Alfort Stade;0.0
+M8;Maisons Alfort Stade;Ecole Veterinaire Maisons Alfort;0.0
+M8;Maisons Alfort Stade;Maisons Alfort Les Juilliottes;0.0
+M8;Maisons Alfort Les Juilliottes;Maisons Alfort Stade;0.0
+M8;Maisons Alfort Les Juilliottes;Creteil l'Echat;0.0
+M8;Creteil l'Echat;Maisons Alfort Les Juilliottes;0.0
+M8;Creteil l'Echat;Creteil Universite;0.0
+M8;Creteil Universite;Creteil l'Echat;0.0
+M8;Creteil Universite;Creteil Prefecture;0.0
+M8;Creteil Prefecture;Creteil Universite;0.0
+M8;Creteil Prefecture;Pointe du Lac;0.0
+M8;Pointe du Lac;Creteil Prefecture;0.0
+# M9
+M9;Pont de Sevres;Billancourt;0.0
+M9;Billancourt;Pont de Sevres;0.0
+M9;Billancourt;Marcel Sembat;0.0
+M9;Marcel Sembat;Billancourt;0.0
+M9;Marcel Sembat;Porte de St Cloud;0.0
+M9;Porte de St Cloud;Marcel Sembat;0.0
+M9;Porte de St Cloud;Exelmans;0.0
+M9;Exelmans;Porte de St Cloud;0.0
+M9;Exelmans;Michel Ange Molitor;0.0
+M9;Michel Ange Molitor;Exelmans;0.0
+M9;Michel Ange Molitor;Michel Ange Auteuil;0.0
+M9;Michel Ange Auteuil;Michel Ange Molitor;0.0
+M9;Michel Ange Auteuil;Jasmin;0.0
+M9;Jasmin;Michel Ange Auteuil;0.0
+M9;Jasmin;Ranelagh;0.0
+M9;Ranelagh;Jasmin;0.0
+M9;Ranelagh;La Muette;0.0
+M9;La Muette;Ranelagh;0.0
+M9;La Muette;Rue de la Pompe;0.0
+M9;Rue de la Pompe;La Muette;0.0
+M9;Rue de la Pompe;Trocadero;0.0
+M9;Trocadero;Rue de la Pompe;0.0
+M9;Trocadero;Iena;0.0
+M9;Iena;Trocadero;0.0
+M9;Iena;Alma Marceau;0.0
+M9;Alma Marceau;Iena;0.0
+M9;Alma Marceau;Franklin Roosevelt;0.0
+M9;Franklin Roosevelt;Alma Marceau;0.0
+M9;Franklin Roosevelt;Saint Philippe du Roule;0.0
+M9;Saint Philippe du Roule;Franklin Roosevelt;0.0
+M9;Saint Philippe du Roule;Miromesnil;0.0
+M9;Miromesnil;Saint Philippe du Roule;0.0
+M9;Miromesnil;Saint Augustin;0.0
+M9;Saint Augustin;Miromesnil;0.0
+M9;Saint Augustin;Havre Caumartin;0.0
+M9;Havre Caumartin;Saint Augustin;0.0
+M9;Havre Caumartin;Chaussee d'Antin La Fayette;0.0
+M9;Chaussee d'Antin La Fayette;Havre Caumartin;0.0
+M9;Chaussee d'Antin La Fayette;Richelieu Drouot;0.0
+M9;Richelieu Drouot;Chaussee d'Antin La Fayette;0.0
+M9;Richelieu Drouot;Grands Boulevards;0.0
+M9;Grands Boulevards;Richelieu Drouot;0.0
+M9;Grands Boulevards;Bonne Nouvelle;0.0
+M9;Bonne Nouvelle;Grands Boulevards;0.0
+M9;Bonne Nouvelle;Strasbourg St Denis;0.0
+M9;Strasbourg St Denis;Bonne Nouvelle;0.0
+M9;Strasbourg St Denis;Republique;0.0
+M9;Republique;Strasbourg St Denis;0.0
+M9;Republique;Oberkampf;0.0
+M9;Oberkampf;Republique;0.0
+M9;Oberkampf;Saint Amboise;0.0
+M9;Saint Amboise;Oberkampf;0.0
+M9;Saint Amboise;Voltaire;0.0
+M9;Voltaire;Saint Amboise;0.0
+M9;Voltaire;Charonne;0.0
+M9;Charonne;Voltaire;0.0
+M9;Charonne;Rue des Boulets;0.0
+M9;Rue des Boulets;Charonne;0.0
+M9;Rue des Boulets;Nation;0.0
+M9;Nation;Rue des Boulets;0.0
+M9;Nation;Buzenval;0.0
+M9;Buzenval;Nation;0.0
+M9;Buzenval;Maraichers;0.0
+M9;Maraichers;Buzenval;0.0
+M9;Maraichers;Porte de Montreuil;0.0
+M9;Porte de Montreuil;Maraichers;0.0
+M9;Porte de Montreuil;Robespierre;0.0
+M9;Robespierre;Porte de Montreuil;0.0
+M9;Robespierre;Croix de Chavaux;0.0
+M9;Croix de Chavaux;Robespierre;0.0
+M9;Croix de Chavaux;Mairie de Montreuil;0.0
+M9;Mairie de Montreuil;Croix de Chavaux;0.0
+# T1
+T1;St Denis;Theatre Gerard philippe;0.0
+T1;Theatre Gerard philippe;St Denis;0.0
+T1;Theatre Gerard philippe;Marche St Denis;0.0
+T1;Marche St Denis;Theatre Gerard philippe;0.0
+T1;Marche St Denis;Basilique St Denis;0.0
+T1;Basilique St Denis;Marche St Denis;0.0
+T1;Basilique St Denis;Cimetiere St Denis;0.0
+T1;Cimetiere St Denis;Basilique St Denis;0.0
+T1;Cimetiere St Denis;Hopital Delafontaine;0.0
+T1;Hopital Delafontaine;Cimetiere St Denis;0.0
+T1;Hopital Delafontaine;Cosmonautes;0.0
+T1;Cosmonautes;Hopital Delafontaine;0.0
+T1;Cosmonautes;La Courneuve 6 Routes;0.0
+T1;La Courneuve 6 Routes;Cosmonautes;0.0
+T1;La Courneuve 6 Routes;Hotel de ville de La Courneuve;0.0
+T1;Hotel de ville de La Courneuve;La Courneuve 6 Routes;0.0
+T1;Hotel de ville de La Courneuve;Stade Geo Andre;0.0
+T1;Stade Geo Andre;Hotel de ville de La Courneuve;0.0
+T1;Stade Geo Andre;Danton;0.0
+T1;Danton;Stade Geo Andre;0.0
+T1;Danton;La Courneuve 8 Mai 1945;0.0
+T1;La Courneuve 8 Mai 1945;Danton;0.0
+T1;La Courneuve 8 Mai 1945;Maurice Lachatre;0.0
+T1;Maurice Lachatre;La Courneuve 8 Mai 1945;0.0
+T1;Maurice Lachatre;Drancy Avenir;0.0
+T1;Drancy Avenir;Maurice Lachatre;0.0
+T1;Drancy Avenir;Hopital avicenne;0.0
+T1;Hopital avicenne;Drancy Avenir;0.0
+T1;Hopital avicenne;Gaston Roulaud;0.0
+T1;Gaston Roulaud;Hopital avicenne;0.0
+T1;Gaston Roulaud;Escadrille Normandie Niemen;0.0
+T1;Escadrille Normandie Niemen;Gaston Roulaud;0.0
+T1;Escadrille Normandie Niemen;La Ferme;0.0
+T1;La Ferme;Escadrille Normandie Niemen;0.0
+T1;La Ferme;Liberation;0.0
+T1;Liberation;La Ferme;0.0
+T1;Liberation;Hotel de ville de Bobigny;0.0
+T1;Hotel de ville de Bobigny;Liberation;0.0
+T1;Hotel de ville de Bobigny;Bobigny Pablo Picasso;0.0
+T1;Bobigny Pablo Picasso;Hotel de ville de Bobigny;0.0
+T1;Bobigny Pablo Picasso;Auguste Delaune;0.0
+T1;Auguste Delaune;Bobigny Pablo Picasso;0.0
+T1;Auguste Delaune;Pont de Bondy;0.0
+T1;Pont de Bondy;Auguste Delaune;0.0
+T1;Pont de Bondy;Petit Noisy;0.0
+T1;Petit Noisy;Pont de Bondy;0.0
+T1;Petit Noisy;Noisy le Sec;0.0
+T1;Noisy le Sec;Petit Noisy;0.0
+# T2
+T2;Defense;Puteaux;0.0
+T2;Puteaux;Defense;0.0
+T2;Puteaux;Belvedere;0.0
+T2;Belvedere;Puteaux;0.0
+T2;Belvedere;Suresnes Lonchamp;0.0
+T2;Suresnes Lonchamp;Belvedere;0.0
+T2;Suresnes Lonchamp;Les Coteaux;0.0
+T2;Les Coteaux;Suresnes Lonchamp;0.0
+T2;Les Coteaux;Les Milons;0.0
+T2;Les Milons;Les Coteaux;0.0
+T2;Les Milons;Parc de St Cloud;0.0
+T2;Parc de St Cloud;Les Milons;0.0
+T2;Parc de St Cloud;Musee de Sevres;0.0
+T2;Musee de Sevres;Parc de St Cloud;0.0
+T2;Musee de Sevres;Brimborion;0.0
+T2;Brimborion;Musee de Sevres;0.0
+T2;Brimborion;Meudon sur Seine;0.0
+T2;Meudon sur Seine;Brimborion;0.0
+T2;Meudon sur Seine;Les Moulineaux;0.0
+T2;Les Moulineaux;Meudon sur Seine;0.0
+T2;Les Moulineaux;Jacques Henri Lartigue;0.0
+T2;Jacques Henri Lartigue;Les Moulineaux;0.0
+T2;Jacques Henri Lartigue;Issy Val de Seine;0.0
+T2;Issy Val de Seine;Jacques Henri Lartigue;0.0
+# T3
+T3;Pont de Garigliano;Balard;0.0
+T3;Balard;Pont de Garigliano;0.0
+T3;Balard;Desnouettes;0.0
+T3;Desnouettes;Balard;0.0
+T3;Desnouettes;Porte de Versailles;0.0
+T3;Porte de Versailles;Desnouettes;0.0
+T3;Porte de Versailles;Georges Brassens;0.0
+T3;Georges Brassens;Porte de Versailles;0.0
+T3;Georges Brassens;Brancion;0.0
+T3;Brancion;Georges Brassens;0.0
+T3;Brancion;Porte de Vanves;0.0
+T3;Porte de Vanves;Brancion;0.0
+T3;Porte de Vanves;Didot;0.0
+T3;Didot;Porte de Vanves;0.0
+T3;Didot;Jean Moulin;0.0
+T3;Jean Moulin;Didot;0.0
+T3;Jean Moulin;Porte d'Orleans;0.0
+T3;Porte d'Orleans;Jean Moulin;0.0
+T3;Porte d'Orleans;Montsouris;0.0
+T3;Montsouris;Porte d'Orleans;0.0
+T3;Montsouris;Cite Universitaire;0.0
+T3;Cite Universitaire;Montsouris;0.0
+T3;Cite Universitaire;Stade Charlety;0.0
+T3;Stade Charlety;Cite Universitaire;0.0
+T3;Stade Charlety;Poterne des Peupliers;0.0
+T3;Poterne des Peupliers;Stade Charlety;0.0
+T3;Poterne des Peupliers;Porte d'Italie;0.0
+T3;Porte d'Italie;Poterne des Peupliers;0.0
+T3;Porte d'Italie;Porte de Choisy;0.0
+T3;Porte de Choisy;Porte d'Italie;0.0
+T3;Porte de Choisy;Porte d'Ivry;0.0
+T3;Porte d'Ivry;Porte de Choisy;0.0
+#H
+H;Gare du Nord;St Denis;0.0
+H;St Denis;Gare du Nord;0.0
+H;St Denis;Epinay Villetaneuse;0.0
+H;Epinay Villetaneuse;St Denis;0.0
+#H1
+H1;Epinay Villetaneuse;Deuil Montmagny;0.0
+H1;Deuil Montmagny;Epinay Villetaneuse;0.0
+H1;Deuil Montmagny;Groslay;0.0
+H1;Groslay;Deuil Montmagny;0.0
+H1;Groslay;Sarcelles Saint-Brice;0.0
+H1;Sarcelles Saint-Brice;Groslay;0.0
+H1;Sarcelles Saint-Brice;Ecouen Ezanville;0.0
+H1;Ecouen Ezanville;Sarcelles Saint-Brice;0.0
+H1;Ecouen Ezanville;Domont;0.0
+H1;Domont;Ecouen Ezanville;0.0
+H1;Domont;Bouffemont Moisselles;0.0
+H1;Bouffemont Moisselles;Domont;0.0
+H1;Bouffemont Moisselles;Montsoult Maffliers;0.0
+H1;Montsoult Maffliers;Bouffemont Moisselles;0.0
+#H11
+H11;Montsoult Maffliers;Villaines;0.0
+H11;Villaines;Montsoult Maffliers;0.0
+H11;Villaines;Belloy Saint-Martin;0.0
+H11;Belloy Saint-Martin;Villaines;0.0
+H11;Belloy Saint-Martin;Viarmes;0.0
+H11;Viarmes;Belloy Saint-Martin;0.0
+H11;Viarmes;Seugy;0.0
+H11;Seugy;Viarmes;0.0
+H11;Seugy;Luzarches;0.0
+H11;Luzarches;Seugy;0.0
+#H12
+H12;Montsoult Maffliers;Presles Courcelles;0.0
+H12;Presles Courcelles;Montsoult Maffliers;0.0
+H12;Presles Courcelles;Nointel Mours;0.0
+H12;Nointel Mours;Presles Courcelles;0.0
+H12;Nointel Mours;Persan Beaumont;0.0
+H12;Persan Beaumont;Nointel Mours;0.0
+#H2
+H2;Epinay Villetaneuse;La Barre Ormesson;0.0
+H2;La Barre Ormesson;Epinay Villetaneuse;0.0
+H2;La Barre Ormesson;Enghien les Bains;0.0
+H2;Enghien les Bains;La Barre Ormesson;0.0
+H2;Enghien les Bains;Champ de courses d'Enghien;0.0
+H2;Champ de courses d'Enghien;Enghien les Bains;0.0
+H2;Champ de courses d'Enghien;Ermont Eaubonne;0.0
+H2;Ermont Eaubonne;Champ de courses d'Enghien;0.0
+#H21
+H21;Ermont Eaubonne;Ermont Halte;0.0
+H21;Ermont Halte;Ermont Eaubonne;0.0
+H21;Ermont Halte;Gros Noyer Saint Prix;0.0
+H21;Gros Noyer Saint Prix;Ermont Halte;0.0
+H21;Gros Noyer Saint Prix;Saint Leu la Forêt;0.0
+H21;Saint Leu la Forêt;Gros Noyer Saint Prix;0.0
+H21;Saint Leu la Forêt;Vaucelles;0.0
+H21;Vaucelles;Saint Leu la Forêt;0.0
+H21;Vaucelles;Taverny;0.0
+H21;Taverny;Vaucelles;0.0
+H21;Taverny;Bessancourt;0.0
+H21;Bessancourt;Taverny;0.0
+H21;Bessancourt;Frepillon;0.0
+H21;Frepillon;Bessancourt;0.0
+H21;Frepillon;Mery sur Oise;0.0
+H21;Mery sur Oise;Frepillon;0.0
+H21;Mery sur Oise;Meriel;0.0
+H21;Meriel;Mery sur Oise;0.0
+H21;Meriel;Valmondois;0.0
+H21;Valmondois;Meriel;0.0
+#H211
+H211;Valmondois;L'Isle Adam Parmain;0.0
+H211;L'Isle Adam Parmain;Valmondois;0.0
+H211;L'Isle Adam Parmain;Champagne sur Oise;0.0
+H211;Champagne sur Oise;L'Isle Adam Parmain;0.0
+H211;Champagne sur Oise;Persan Beaumont;0.0
+H211;Persan Beaumont;Champagne sur Oise;0.0
+#H22
+H22;Ermont Eaubonne;Cernay;0.0
+H22;Cernay;Ermont Eaubonne;0.0
+H22;Cernay;Franconville Le Plessis Bouchard;0.0
+H22;Franconville Le Plessis Bouchard;Cernay;0.0
+H22;Franconville Le Plessis Bouchard;Montigny Beauchamp;0.0
+H22;Montigny Beauchamp;Franconville Le Plessis Bouchard;0.0
+H22;Montigny Beauchamp;Pierrelaye;0.0
+H22;Pierrelaye;Montigny Beauchamp;0.0
+H22;Pierrelaye;St Ouen l'Aumone Liesse;0.0
+H22;St Ouen l'Aumone Liesse;Pierrelaye;0.0
+H22;St Ouen l'Aumone Liesse;St Ouen l'Aumone;0.0
+H22;St Ouen l'Aumone;St Ouen l'Aumone Liesse;0.0
+H22;St Ouen l'Aumone;Pontoise;0.0
+H22;Pontoise;St Ouen l'Aumone;0.0
+#H3
+H3;Pontoise;Epluches;0.0
+H3;Epluches;Pontoise;0.0
+H3;Epluches;Pont Petit;0.0
+H3;Pont Petit;Epluches;0.0
+H3;Pont Petit;Chaponval;0.0
+H3;Chaponval;Pont Petit;0.0
+H3;Chaponval;Auvers sur Oise;0.0
+H3;Auvers sur Oise;Chaponval;0.0
+H3;Auvers sur Oise;Valmondois;0.0
+H3;Valmondois;Auvers sur Oise;0.0
+#H3
+H3;Persan Beaumont;Bruyeres sur Oise;0.0
+H3;Bruyeres sur Oise;Persan Beaumont;0.0
+H3;Bruyeres sur Oise;Boran sur Oise;0.0
+H3;Boran sur Oise;Bruyeres sur Oise;0.0
+H3;Boran sur Oise;Precy sur Oise;0.0
+H3;Precy sur Oise;Boran sur Oise;0.0
+H3;Precy sur Oise;Saint Leu d'Esserent;0.0
+H3;Saint Leu d'Esserent;Precy sur Oise;0.0
+H3;Saint Leu d'Esserent;Creil;0.0
+H3;Creil;Saint Leu d'Esserent;0.0
