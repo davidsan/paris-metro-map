@@ -6,7 +6,7 @@ Un_noeud *creer_noeud(Une_coord limite_no, Une_coord limite_se, Un_truc *truc){
   Un_noeud *n=NULL;
   n=(Un_noeud*)malloc(sizeof(Un_noeud));
   if(!n){
-    fprintf(stderr,"Erreur: allocation memoire");
+    fprintf(stderr,"Erreur: allocation memoire\n");
     return NULL;
   }
   n->limite_no = limite_no;
@@ -26,6 +26,7 @@ Un_noeud *inserer_aqr(Un_noeud *aqr, Une_coord limite_no, Une_coord limite_se, U
   }
   m.lon=(limite_no.lon+limite_se.lon)/2;
   m.lat=(limite_no.lat+limite_se.lat)/2;
+ 
   if(truc->coord.lon >= limite_no.lon && truc->coord.lon <= m.lon && truc->coord.lat >= m.lat && truc->coord.lat <= limite_no.lat){
     aqr->no = inserer_aqr(aqr->no, limite_no, m, truc);
   }
@@ -38,17 +39,15 @@ Un_noeud *inserer_aqr(Un_noeud *aqr, Une_coord limite_no, Une_coord limite_se, U
   if(truc->coord.lon >= limite_no.lon && truc->coord.lon <= m.lon && truc->coord.lat >= limite_se.lat && truc->coord.lat < m.lat){
     aqr->so = inserer_aqr(aqr->so, tmp, m , truc);
   }
+ 
   tmp.lon = limite_se.lon;
   tmp.lat = limite_no.lat;
-
   if(truc->coord.lon > m.lon && truc->coord.lon <= limite_se.lon && truc->coord.lat >= m.lat && truc->coord.lat <= limite_no.lat){
     aqr->ne = inserer_aqr(aqr, m, tmp, truc);
   }
-  
+ 
   return aqr;
 }
-
-
 
 void detruire_aqr(Un_noeud *aqr){
   if(!aqr){
@@ -81,26 +80,28 @@ Un_truc *chercher_aqr(Un_noeud *aqr, Une_coord coord){
  
   m.lon=(limite_no.lon+limite_se.lon)/2;
   m.lat=(limite_no.lat+limite_se.lat)/2;
+
   if(aqr->truc->coord.lon >= limite_no.lon && aqr->truc->coord.lon <= m.lon && aqr->truc->coord.lat >= m.lat && aqr->truc->coord.lat <= limite_no.lat){
-    chercher_aqr(aqr->no, coord);
+    return chercher_aqr(aqr->no, coord);
   }
+  
   if(aqr->truc->coord.lon < limite_se.lon && aqr->truc->coord.lon > m.lon && aqr->truc->coord.lat < m.lat && aqr->truc->coord.lat > limite_se.lat){
-    chercher_aqr(aqr->se, coord);
+    return chercher_aqr(aqr->se, coord);
   }
 
   tmp.lat = limite_se.lat;
   tmp.lon = limite_no.lon;
-  if(aqr->truc->coord.lon >= limite_no.lon && aqr->truc->coord.lon <= m.lon && aqr->truc->coord.lat >= limite_se.lat && aqr->truc->coord.lat < m.lat){
-    chercher_aqr(aqr->so, coord);
-  }
-  tmp.lon = limite_se.lon;
-  tmp.lat = limite_no.lat;
 
-  if(aqr->truc->coord.lon > m.lon && aqr->truc->coord.lon <= limite_se.lon && aqr->truc->coord.lat >= m.lat && aqr->truc->coord.lat <= limite_no.lat){
-    chercher_aqr(aqr->ne,coord);
+  if(aqr->truc->coord.lon >= limite_no.lon && aqr->truc->coord.lon <= m.lon && aqr->truc->coord.lat >= limite_se.lat && aqr->truc->coord.lat < m.lat){
+    return chercher_aqr(aqr->so, coord);
   }
-  return NULL; // Si j'enlève cette ligne j'ai une erreur à la compilation
-  
+  else{
+    tmp.lon = limite_se.lon;
+    tmp.lat = limite_no.lat;
+    
+    // if(aqr->truc->coord.lon > m.lon && aqr->truc->coord.lon <= limite_se.lon && aqr->truc->coord.lat >= m.lat && aqr->truc->coord.lat <= limite_no.lat){
+    return chercher_aqr(aqr->ne,coord);
+  }
 }
 
 
@@ -126,7 +127,7 @@ Un_noeud *construire_aqr(Un_elem *liste){
 	limite_se.lon = l->truc->coord.lon;
       }
     }
-    
+ 
     if(l->truc->coord.lat > limite_no.lat){
       limite_no.lat = l->truc->coord.lat;
     }
