@@ -8,6 +8,10 @@
 #include "abr_type.h"
 #include <stdio.h>
 
+/* defines */
+
+#define MAX_LIGNE 1024
+
 /* types */
 
 typedef struct _un_elem
