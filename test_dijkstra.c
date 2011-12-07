@@ -68,11 +68,11 @@ int main(int argc, char *argv[])
   
   pcc = cherche_chemin(sta_arr);
 
-   ecrire_liste(stdout, pcc);
-
+  ecrire_liste(stdout, pcc);
+   
   printf("temps de parcours = %f minutes \n", sta_arr->user_val);
 		
-  detruire_liste_et_truc(pcc);
+  detruire_liste(pcc);
    
   detruire_abr(abr_sta);
 
