@@ -20,18 +20,20 @@ Une_ligne *lire_lignes(char *nom_fichier){
     str=strtok(buff,";");
     if (!str){
       fprintf(stderr,"Erreur : lecture du code de la ligne\n");
+      fclose(f);
       return NULL;
     }
     ligne=(Une_ligne*)malloc(sizeof(Une_ligne));
     if(!ligne){
       fprintf(stderr,"Erreur : allocation mémoire\n");
-      free(str);
+      fclose(f);
       return NULL;
     }
     ligne->code=strdup(str);
     str=strtok(NULL,";");
     if (!str){
       fprintf(stderr,"Erreur : lecture de la vitesse\n");
+      fclose(f);
       return NULL;
     }
     ligne->vitesse=atof(str);
@@ -39,6 +41,7 @@ Une_ligne *lire_lignes(char *nom_fichier){
     if (!str){
       fprintf(stderr,"Erreur : lecture de l'intervalle\n");
       free(ligne);
+      fclose(f);
       return NULL;
     }
     ligne->intervalle=atof(str);
@@ -46,6 +49,7 @@ Une_ligne *lire_lignes(char *nom_fichier){
     if (!str){
       fprintf(stderr,"Erreur : lecture de la couleur de la ligne\n");
       free(ligne);
+      fclose(f);
       return NULL;
     }
     ligne->color=strdup(str);
@@ -55,7 +59,8 @@ Une_ligne *lire_lignes(char *nom_fichier){
       deb=ligne;
     prec=ligne;
   }
-  prec->suiv=NULL; 
+  prec->suiv=NULL;
+  fclose(f);
   return deb;
 }
 
@@ -68,7 +73,7 @@ void afficher_lignes(Une_ligne *lligne){
 
 void detruire_lignes(Une_ligne *lligne){
   if(lligne!=NULL){
-    detruire_lignes(lligne->suiv);   
+    detruire_lignes(lligne->suiv);
     free(lligne->code);
     free(lligne->color);
     free(lligne);
