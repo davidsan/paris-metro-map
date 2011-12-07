@@ -65,9 +65,11 @@ int main(int argc, char *argv[])
     }
 	
   dijkstra(liste_sta, sta_dep);
+  
   pcc = cherche_chemin(sta_arr);
 
-  ecrire_liste(stdout, pcc);
+   ecrire_liste(stdout, pcc);
+
   printf("temps de parcours = %f minutes \n", sta_arr->user_val);
 		
   detruire_liste_et_truc(pcc);
