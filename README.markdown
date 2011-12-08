@@ -1,7 +1,7 @@
 # Project 215 (aka RATP)
 
 
-## Progress : 4 / 6
+## Progress : 5 / 6
 
 ```
 23/11 correction Stralingrad -> Stalingrad
@@ -36,7 +36,7 @@ suprimer toute référence à ces fichiers dans le Makefile.
 ### Test stations
 
 ``` bash
-$ make -f Makefile2 test_sta
+$ make test_sta
 $ ./test_sta Stations_MRT.csv 
 
 ```
@@ -44,7 +44,7 @@ $ ./test_sta Stations_MRT.csv
 ### Test lignes
 
 ``` bash
-$ make -f Makefile2 test_ligne
+$ make test_ligne
 $ ./test_ligne Lignes_MRT.csv 
 
 ```
@@ -52,7 +52,7 @@ $ ./test_ligne Lignes_MRT.csv
 ### Test connexions
 
 ``` bash
-$ make -f Makefile2 test_connexion
+$ make test_connexion
 $ ./test_connexion Stations_MRT.csv Lignes_MRT.csv Connections_MRT.csv
 
 ```
@@ -60,7 +60,15 @@ $ ./test_connexion Stations_MRT.csv Lignes_MRT.csv Connections_MRT.csv
 ### Test dijkstra
 
 ``` bash
-$ make -f Makefile2 test_dijkstra
+$ make test_dijkstra
 $ ./test_dijkstra Stations_MRT.csv Lignes_MRT.csv Connections_MRT.csv "Jussieu" "Republique"
+
+```
+
+### Test aqr
+
+``` bash
+$ make test_aqr
+$ ./test_dijkstra Stations_MRT.csv Lignes_MRT.csv Connections_MRT.csv
 
 ```
