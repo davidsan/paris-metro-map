@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "aqrtopo.h"
+#include "liste.h"
 
 Un_noeud *creer_noeud(Une_coord limite_no, Une_coord limite_se, Un_truc *truc){
   Un_noeud *n=NULL;
@@ -18,6 +19,7 @@ Un_noeud *creer_noeud(Une_coord limite_no, Une_coord limite_se, Un_truc *truc){
 Un_noeud *inserer_aqr(Un_noeud *aqr, Une_coord limite_no, Une_coord limite_se, Un_truc *truc){
   Une_coord m, tmp;
   if(!aqr){
+    fprintf(stdout,"ARBRE VIDE\n");
     return creer_noeud(limite_no, limite_se, truc);
   }
   if(aqr->truc){
@@ -64,6 +66,53 @@ Un_noeud *inserer_aqr(Un_noeud *aqr, Une_coord limite_no, Une_coord limite_se, U
   return aqr;
 }
 
+Un_noeud *construire_aqr(Un_elem *liste){
+  Un_elem *l=NULL;
+  Un_noeud *aqr=NULL;
+  Une_coord limite_no, limite_se;
+
+  if(!liste){
+    fprintf(stderr, "Erreur : liste de stations vide\n");
+    return NULL;
+  }
+  
+  limite_no = liste->truc->coord;
+  limite_se = liste->truc->coord; 
+  
+  l = liste->suiv;
+
+  while(l){
+    printf("ya\n");    
+      
+    if(l->truc->coord.lon < limite_no.lon){
+      limite_no.lon = l->truc->coord.lon;
+    }
+    else {
+      if(l->truc->coord.lon > limite_se.lon){
+	limite_se.lon = l->truc->coord.lon;
+      }
+    }
+ 
+    if(l->truc->coord.lat > limite_no.lat){
+      limite_no.lat = l->truc->coord.lat;
+    }
+    else{
+      if(l->truc->coord.lat < limite_se.lat){
+	limite_se.lat = l->truc->coord.lat;
+      }
+    }
+    aqr = inserer_aqr(aqr, limite_no, limite_se, l->truc);
+      
+    l=l->suiv;
+  }
+  while(liste !=NULL){
+    printf("yo\n");
+    aqr = inserer_aqr(aqr, limite_no, limite_se, liste->truc);
+    liste = liste->suiv;
+  }
+  return aqr;
+}
+
 void detruire_aqr(Un_noeud *aqr){
   if(!aqr){
     return;
@@ -80,19 +129,21 @@ void detruire_aqr(Un_noeud *aqr){
 Un_truc *chercher_aqr(Un_noeud *aqr, Une_coord coord){
   Une_coord limite_no = aqr->limite_no;
   Une_coord limite_se = aqr->limite_se;
-  Une_coord m, tmp;
-  if(!aqr){
+  Une_coord m;
+  if((!aqr) || (coord.lon < aqr->limite_no.lon || coord.lon >limite_se.lon || coord.lat > limite_no.lat || coord.lat < limite_se.lat)){
+    fprintf(stderr, "Erreur : AQR vide ou coord en dehors de AQR\n");
     return NULL;
   }
-  if(aqr->truc != NULL){
-    if(aqr->truc->coord.lon == coord.lon && aqr->truc->coord.lat == coord.lat){
+  if(aqr->truc != NULL){	
+    if(coord.lon == aqr->truc->coord.lon && coord.lat == aqr->truc->coord.lat){
       return aqr->truc;
     }
     else{
+      fprintf(stderr, "Erreur : Station de coordonnées coord non trouvé dans AQR\n");
       return NULL;
     }
   }
- 
+
   m.lon=(limite_no.lon+limite_se.lon)/2;
   m.lat=(limite_no.lat+limite_se.lat)/2;
 
@@ -112,9 +163,6 @@ Un_truc *chercher_aqr(Un_noeud *aqr, Une_coord coord){
       return chercher_aqr(aqr->se, coord);
     }
 
-  tmp.lat = limite_se.lat;
-  tmp.lon = limite_no.lon;
-
   if(coord.lon >= limite_no.lon &&				\
      coord.lon <= m.lon &&					\
      coord.lat >= limite_se.lat &&				\
@@ -122,58 +170,12 @@ Un_truc *chercher_aqr(Un_noeud *aqr, Une_coord coord){
     {
       return chercher_aqr(aqr->so, coord);
     }
-  else{
-    /*
-      if(coord.lon > m.lon &&					\
-      coord.lon <= limite_se.lon &&				\
-      coord.lat >= m.lat &&					\
-      coord.lat <= limite_no.lat)
-    */
-    tmp.lon = limite_se.lon;
-    tmp.lat = limite_no.lat;
+  else
+    {
     return chercher_aqr(aqr->ne,coord);
-  }
+    }
 }
 
-Un_noeud *construire_aqr(Un_elem *liste){
-  Un_elem *l=NULL;
-  Un_noeud *aqr=NULL;
-  Une_coord limite_no, limite_se;
-  if(!liste){
-    return NULL;
-  }
-  limite_no = liste->truc->coord;
-  limite_se = liste->truc->coord;
-  l = liste->suiv;
-
-  while(l){
-
-    if(l->truc->coord.lon < limite_no.lon){
-      limite_no.lon = l->truc->coord.lon;
-    }
-    else {
-      if(l->truc->coord.lon > limite_se.lon){
-	limite_se.lon = l->truc->coord.lon;
-      }
-    }
- 
-    if(l->truc->coord.lat > limite_no.lat){
-      limite_no.lat = l->truc->coord.lat;
-    }
-    else{
-      if(l->truc->coord.lat < limite_se.lat){
-	limite_se.lat = l->truc->coord.lat;
-      }
-    }
-    aqr = inserer_aqr(aqr, limite_no, limite_se, l->truc);
-  }
-
-  while(liste){
-    aqr = inserer_aqr(aqr, limite_no, limite_se, liste->truc);
-    liste = liste->suiv;
-  }
-  return aqr;
-}
 
 
 Un_elem *chercher_zone(Un_noeud *aqr, Un_elem *liste, Une_coord limite_no, Une_coord limite_se){
