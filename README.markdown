@@ -2,7 +2,7 @@
 
 ## Progress : 5 / 6
 
-![](screen01.png)
+![](https://github.com/sandavid/RATP/raw/master/screen01.png)
 
 ```
 23/11 correction Stralingrad -> Stalingrad
