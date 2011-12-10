@@ -64,7 +64,7 @@ metro_v1 : metro_v1.o metro_callback_v1.o liste.o truc.o ligne.o abr.o
 metro_v2 : metro_v2.o metro_callback_v2.o liste.o truc.o ligne.o abr.o aqrtopo.o
 	$(CC) $(C_FLAGS) `pkg-config --libs gtk+-2.0` -o $@ $^
 
-metro_v3 : metro_v3.o metro_callback_v3.o liste.o truc.o ligne.o abr.o aqrtopo.o
+metro_v3 : metro_v3.o metro_callback_v3.o liste.o truc.o ligne.o abr.o aqrtopo.o dijkstra.o
 	$(CC) $(C_FLAGS) `pkg-config --libs gtk+-2.0` -o $@ $^
 
 clean :
