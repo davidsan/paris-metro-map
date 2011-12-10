@@ -1,7 +1,6 @@
 # Project 215 (aka RATP)
-
 ## Progress : 5 / 6
-
+## Preview
 ![](https://github.com/sandavid/RATP/raw/master/screen01.png)
 
 ```
@@ -33,7 +32,13 @@ suprimer toute référence à ces fichiers dans le Makefile.
 ```
 
 ## Usage
+``` bash
+$ make metro_v1
+$ ./metro_v1
 
+```
+
+## Test file
 ### Test stations
 
 ``` bash
