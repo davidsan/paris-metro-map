@@ -18,51 +18,60 @@ Un_noeud *creer_noeud(Une_coord limite_no, Une_coord limite_se, Un_truc *truc){
 
 Un_noeud *inserer_aqr(Un_noeud *aqr, Une_coord limite_no, Une_coord limite_se, Un_truc *truc){
   Une_coord m, tmp;
+  Un_truc *trucTmp;
   if(!aqr){
-    fprintf(stdout,"ARBRE VIDE\n");
-    return creer_noeud(limite_no, limite_se, truc);
-  }
-  if(aqr->truc){
-    aqr = inserer_aqr(aqr, limite_no, limite_se, aqr->truc);
-    aqr->truc=NULL;
-  }
-  m.lon=(limite_no.lon+limite_se.lon)/2;
-  m.lat=(limite_no.lat+limite_se.lat)/2;
- 
-  if(truc->coord.lon >= limite_no.lon &&				\
-     truc->coord.lon <= m.lon &&					\
-     truc->coord.lat >= m.lat &&					\
-     truc->coord.lat <= limite_no.lat)
-    {
-      aqr->no = inserer_aqr(aqr->no, limite_no, m, truc);
+    aqr = creer_noeud(limite_no, limite_se, truc);
+    if(!aqr){
+      fprintf(stderr, "Erreur : création de noeud\n");
+      return NULL;
     }
-  if(truc->coord.lon < limite_se.lon &&					\
-     truc->coord.lon > m.lon &&						\
-     truc->coord.lat < m.lat &&						\
-     truc->coord.lat > limite_se.lat)
-    {
-      aqr->se = inserer_aqr(aqr->se, m, limite_se, truc);
+  }/*
+  else{
+    if(aqr->truc!=NULL){
+      trucTmp=aqr->truc;
+      aqr->truc=NULL;
+      aqr=inserer_aqr(aqr, limite_no, limite_se, trucTmp);
     }
+    
+    m.lon=(limite_no.lon+limite_se.lon)/2;
+    m.lat=(limite_no.lat+limite_se.lat)/2;
+    
+    if(truc->coord.lon >= limite_no.lon &&				\
+       truc->coord.lon <= m.lon &&					\
+       truc->coord.lat >= m.lat &&					\
+       truc->coord.lat <= limite_no.lat)
+      {
+	aqr->no = inserer_aqr(aqr->no, limite_no, m, truc);
+      }
+    if(truc->coord.lon < limite_se.lon &&				\
+       truc->coord.lon > m.lon &&					\
+       truc->coord.lat < m.lat &&					\
+       truc->coord.lat > limite_se.lat)
+      {
+	aqr->se = inserer_aqr(aqr->se, m, limite_se, truc);
+      }
 
-  tmp.lat = limite_se.lat;
-  tmp.lon = limite_no.lon;
-  if(truc->coord.lon >= limite_no.lon &&				\
-     truc->coord.lon <= m.lon &&					\
-     truc->coord.lat >= limite_se.lat &&				\
-     truc->coord.lat < m.lat)
-    {
-      aqr->so = inserer_aqr(aqr->so, tmp, m , truc);
-    }
+    tmp.lat = limite_se.lat;
+    tmp.lon = limite_no.lon;
+    if(truc->coord.lon >= limite_no.lon &&				\
+       truc->coord.lon <= m.lon &&					\
+       truc->coord.lat >= limite_se.lat &&				\
+       truc->coord.lat < m.lat)
+      {
+	aqr->so = inserer_aqr(aqr->so, tmp, m , truc);
+      }
  
-  tmp.lon = limite_se.lon;
-  tmp.lat = limite_no.lat;
-  if(truc->coord.lon > m.lon &&						\
-     truc->coord.lon <= limite_se.lon &&				\
-     truc->coord.lat >= m.lat &&					\
-     truc->coord.lat <= limite_no.lat)
-    {
-      aqr->ne = inserer_aqr(aqr, m, tmp, truc);
-    }
+    tmp.lon = limite_se.lon;
+    tmp.lat = limite_no.lat;
+    if(truc->coord.lon > m.lon &&					\
+       truc->coord.lon <= limite_se.lon &&				\
+       truc->coord.lat >= m.lat &&					\
+       truc->coord.lat <= limite_no.lat)
+      {
+	aqr->ne = inserer_aqr(aqr->ne, m, tmp, truc);
+      }
+  }
+   */
   return aqr;
 }
 
@@ -70,20 +79,14 @@ Un_noeud *construire_aqr(Un_elem *liste){
   Un_elem *l=NULL;
   Un_noeud *aqr=NULL;
   Une_coord limite_no, limite_se;
-
   if(!liste){
     fprintf(stderr, "Erreur : liste de stations vide\n");
     return NULL;
   }
-  
   limite_no = liste->truc->coord;
   limite_se = liste->truc->coord; 
-  
   l = liste->suiv;
-
-  while(l){
-    printf("ya\n");    
-      
+  while(l){      
     if(l->truc->coord.lon < limite_no.lon){
       limite_no.lon = l->truc->coord.lon;
     }
@@ -91,8 +94,7 @@ Un_noeud *construire_aqr(Un_elem *liste){
       if(l->truc->coord.lon > limite_se.lon){
 	limite_se.lon = l->truc->coord.lon;
       }
-    }
- 
+    } 
     if(l->truc->coord.lat > limite_no.lat){
       limite_no.lat = l->truc->coord.lat;
     }
@@ -100,13 +102,10 @@ Un_noeud *construire_aqr(Un_elem *liste){
       if(l->truc->coord.lat < limite_se.lat){
 	limite_se.lat = l->truc->coord.lat;
       }
-    }
-    aqr = inserer_aqr(aqr, limite_no, limite_se, l->truc);
-      
+    }    
     l=l->suiv;
   }
   while(liste !=NULL){
-    printf("yo\n");
     aqr = inserer_aqr(aqr, limite_no, limite_se, liste->truc);
     liste = liste->suiv;
   }
@@ -117,14 +116,16 @@ void detruire_aqr(Un_noeud *aqr){
   if(!aqr){
     return;
   }
-  if(!aqr->truc){
-    detruire_aqr(aqr->no);
-    detruire_aqr(aqr->so);
+  if(!aqr->truc){    
+    detruire_aqr(aqr->no);    
+    detruire_aqr(aqr->so);    
     detruire_aqr(aqr->ne);
     detruire_aqr(aqr->se);
   }
   free(aqr);
 }
+
+
 
 Un_truc *chercher_aqr(Un_noeud *aqr, Une_coord coord){
   Une_coord limite_no = aqr->limite_no;
@@ -172,7 +173,7 @@ Un_truc *chercher_aqr(Un_noeud *aqr, Une_coord coord){
     }
   else
     {
-    return chercher_aqr(aqr->ne,coord);
+      return chercher_aqr(aqr->ne,coord);
     }
 }
 
@@ -250,3 +251,4 @@ int hauteur_aqr(Un_noeud *aqr){
     return 1 + max(max(hauteur_aqr(aqr->no), hauteur_aqr(aqr->ne)), max(hauteur_aqr(aqr->so), hauteur_aqr(aqr->se)));
   }
 }
+

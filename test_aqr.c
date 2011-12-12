@@ -2,20 +2,23 @@
 #include "liste.h"
 #include "truc.h"
 #include "abr.h"
-#include "ligne.h"
 #include "aqrtopo.h"
 
 int main(int argc, char *argv[])
 {
-  Un_elem *liste_sta = NULL;
-  Une_ligne *liste_ligne = NULL;
-  // Un_elem *liste_con = NULL;
-  Un_nabr *abr_sta=NULL;
+  Un_elem *liste_sta = NULL;  
   Un_noeud *aqr_sta=NULL;
+  Une_coord limite_no;
+  Une_coord limite_se;
+  limite_no.lon=0;
+  limite_no.lat=90;
+  limite_se.lon=60;
+  limite_se.lat=0;
+   
 
-  if (argc != 4)
+  if (argc != 2)
     {
-      fprintf(stderr, "Usage : test_connexion fichier_stations fichier_ligne fichier connexion\n");
+      fprintf(stderr, "Usage : test_aqr fichier_stations\n");
       return 1;
     }
 	
@@ -26,35 +29,17 @@ int main(int argc, char *argv[])
     }
   ecrire_liste(stdout,liste_sta);
 
-  printf("Prépare à construire ABR\n");
-  abr_sta = construire_abr(liste_sta);
-  printf("ABR construit\n");
-
-
-  if ((liste_ligne = lire_lignes(argv[2])) == NULL)
-    {
-      fprintf(stderr, "Erreur : Lecture fichier lignes\n");
-      return 1;
-    }
-  /*
-  if ((liste_con = lire_connexions(argv[3], liste_ligne, abr_sta)) == NULL)
-    {
-      fprintf(stderr, "Erreur : Lecture fichier connexion\n");
-      return 1;
-    }
-	
-  ecrire_liste(stdout,liste_con);
+  /* test creer_noeud 
+     aqr_sta=creer_noeud(limite_no, limite_se, liste_sta->truc); 
+     printf("%s\n", aqr_sta->truc->data.sta.nom);
+     aqr_sta=creer_noeud(limite_no, limite_se, liste_sta->suiv->truc);
+     printf("%s\n", aqr_sta->truc->data.sta.nom);
   */
-  printf("Prepare à construire AQR\n");
+  
   aqr_sta=construire_aqr(liste_sta);
-  printf("AQR construit\n");
-  detruire_abr(abr_sta);
-	
-  // detruire_liste_et_truc(liste_con);
-
+  
+  detruire_aqr(aqr_sta);
+  
   detruire_liste_et_truc(liste_sta);
-	
-  detruire_lignes(liste_ligne);
-
   return 0;
 }
