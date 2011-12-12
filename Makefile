@@ -68,6 +68,6 @@ metro_v3 : metro_v3.o metro_callback_v3.o liste.o truc.o ligne.o abr.o aqrtopo.o
 	$(CC) $(C_FLAGS) `pkg-config --libs gtk+-2.0` -o $@ $^
 
 clean :
-	rm -f $(OBJ) test_sta test_ligne test_connexion test_dijkstra .depend metro_v0 metro_v1 metro_v2 metro_v3
+	rm -f $(OBJ) test_sta test_ligne test_connexion test_dijkstra test_aqr .depend metro_v0 metro_v1 metro_v2 metro_v3
 
 .PHONY: all clean depend
