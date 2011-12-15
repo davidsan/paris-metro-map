@@ -23,3 +23,7 @@ integration de la ligne H, idem en _fr.csv (pour gtk français).
 07/12 Mise à jours du Makefile.
 07/12 Remarque : si n'avez rien mis dans station.c ou connexion.c vous pouvez
 suprimer toute référence à ces fichiers dans le Makefile.
+12/12 Mise à jour fichiers csv (ajout T4)
+12/12 midif mineures dans v0, v1, v2, v3
+12/12 ajout v4 (afffichage des correspondances) version intégrant des
+propositions de Pierre-Louis O. étudiant suivant l'UE.

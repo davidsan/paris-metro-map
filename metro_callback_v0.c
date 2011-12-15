@@ -34,7 +34,7 @@ double xtolon(int x)
 
 double ytolat(int y)
 	{
-	return lim_no.lon - (((y - BORD) * (lim_no.lat - lim_se.lat)) / w);
+	return lim_no.lon - (((y - BORD) * (lim_no.lat - lim_se.lat)) / h);
 	}
 
 void tracer_liste(Un_elem *liste, cairo_t *cr)

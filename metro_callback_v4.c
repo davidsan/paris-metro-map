@@ -3,6 +3,7 @@
 #include <math.h>
 #include <gtk/gtk.h>
 #include <cairo.h>
+#include <string.h>
 
 #include "liste.h"
 #include "aqrtopo.h"
@@ -31,6 +32,8 @@ static Un_truc *sta_arr = NULL;
 
 extern GtkWidget *pDA;
 extern GtkWidget *pLabelPCC;
+
+extern GtkTextBuffer *pTxt_buffer;
 
 int w,h;
 
@@ -110,20 +113,37 @@ void tracer_liste(Un_elem *liste, cairo_t *cr)
 void tracer_pcc(Un_elem *liste, cairo_t *cr)
 	{
 	Une_coord coord_dep, coord_arr;
+	
+	Une_ligne *ligne_prec = NULL;
+	
+	gtk_text_buffer_set_text(pTxt_buffer,"",-1); //"Efface" le text_view precedent
 
-	cairo_set_line_width (cr, 12);
-	cairo_set_source_rgba( cr, 0.0, 1.0, 0.0, 0.2);
+	cairo_set_line_width (cr, 6);
+	cairo_set_source_rgba( cr, 0.0, 1.0, 0.0, 0.3);
 	cairo_set_line_cap  (cr, CAIRO_LINE_CAP_ROUND);
 	cairo_set_line_join (cr, CAIRO_LINE_JOIN_ROUND);
 
 
 	coord_dep = liste->truc->data.con.sta_dep->coord;
 	cairo_move_to (cr, lontox(coord_dep.lon), lattoy(coord_dep.lat));
+	
+	gtk_text_buffer_set_text(pTxt_buffer,"Liste des changements : \n\n",-1);
 
 	while(liste)
 		{
+		if(liste->truc->data.con.ligne != ligne_prec)
+			{
+			gtk_text_buffer_insert_at_cursor(pTxt_buffer, "A ", -1);
+			gtk_text_buffer_insert_at_cursor(pTxt_buffer, liste->truc->data.con.sta_dep->data.sta.nom, -1);
+			gtk_text_buffer_insert_at_cursor(pTxt_buffer, "\nprendre la ligne ", -1);
+			gtk_text_buffer_insert_at_cursor(pTxt_buffer, liste->truc->data.con.ligne->code, -1);
+			gtk_text_buffer_insert_at_cursor(pTxt_buffer, "\nvers ", -1);
+			gtk_text_buffer_insert_at_cursor(pTxt_buffer,liste->truc->data.con.sta_arr->data.sta.nom, -1);
+			gtk_text_buffer_insert_at_cursor(pTxt_buffer, "\n\n", -1);
+			}
 		coord_arr = liste->truc->data.con.sta_arr->coord;
 		cairo_line_to(cr, lontox(coord_arr.lon), lattoy(coord_arr.lat));
+		ligne_prec=liste->truc->data.con.ligne;
 		liste = liste->suiv;
 		}
 	cairo_stroke (cr);
@@ -301,6 +321,8 @@ void OnChangeSta(GtkWidget* widget, gpointer data)
 		{
 		detruire_liste(lcon_pcc);
 		lcon_pcc = NULL;
+		
+		gtk_text_buffer_set_text(pTxt_buffer,"",-1); //Efface le text_view precedent en cas de non selection d'une station de depart/ d'arrivee
 
 		gtk_label_set_text(GTK_LABEL(pLabelPCC), "Pas de parcours selectionne");
 		}
@@ -319,8 +341,9 @@ void OnChangeSta(GtkWidget* widget, gpointer data)
 		detruire_liste(lcon_pcc);
 		lcon_pcc = cherche_chemin(sta_arr);
 
-		sprintf(l_pcc, "Temps de parcours : %.1f", sta_arr->user_val);
+		sprintf(l_pcc, "Temps de parcours : %.1f minutes", sta_arr->user_val);
 		gtk_label_set_text(GTK_LABEL(pLabelPCC), l_pcc);
+		
 		}
 	gtk_widget_queue_draw(pDA);
 	}
